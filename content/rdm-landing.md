@@ -2,36 +2,19 @@
 
 ### Research Data Management Skills
 
+<div class="splash">
 Welcome!
 
 <img src="img/all_logos-2-scaled.png" />
 
 Tamora James, Centre for Environmental Modelling and Computing, University of Leeds
 <t.d.james1@leeds.ac.uk>
+</div>
 
 
-### Timetable
+### Prerequisite
 
-<p class="left">
-10:00 Organising and documenting your data
-<br/>
-11:00 Break
-<br/>
-11:20 Interacting with data
-<br/>
-12:30 Lunch
-<br/>
-13:30 Storage and backup
-<br/>
-14:30 Versioning and quality control
-<br/>
-15:30 Databases
-<br/>
-16:30 Finish
-</p>
-
-
-### Recommended
+<div class="splash">
 
 *Research Data Management Essentials*, University Library, University of Leeds
 
@@ -40,24 +23,44 @@ Tamora James, Centre for Environmental Modelling and Computing, University of Le
 Note: The University Library's "Research Data Management Essentials"
 course covers data management plans, data collection protocols, value
 of data, data lifecycle, IP, ethical issues, sensitive data etc.
+</div>
+
+
+### Timetable
+
+<p class="left">
+14:00 &hellip; Creating and managing research data
+<br/>
+14:50 &hellip; Break
+<br/>
+15:00 &hellip; Developing reproducible workflows
+<br/>
+15:50 &hellip; Break
+<br/>
+16:00 &hellip; Version control and archiving
+<br/>
+16:50 &hellip; Finish
+</p>
 
 
 
 ### About you
 
-<img src="img/fields-prop-dark.png" />
+<div class="splash"><img src="img/fields-prop-dark.png" /></div>
 
 
-<img src="img/data-word-cloud-dark.png" />
+<div class="splash"><img src="img/data-word-cloud-dark.png" /></div>
 
 
-<img src="img/software-prop-dark.png" />
+<div class="splash"><img src="img/software-prop-dark.png" /></div>
 
 
 
 ### Research data lifecycle
 
+<div class="splash">
 <img src="img/data_lifecycle_colour_shadow.png" width="50%"/>
+</div>
 
 
 <img src="img/data_lifecycle_plan.png" width="30%" style = "float: left; margin-right: 0.6em;"/>
@@ -81,7 +84,7 @@ Storage and backup</p>
 <p class="left"><br/>
 Developing an analysis pipeline<br/>
 Reproducible workflows<br/>
-Literate programming?
+Literate programming
 </p>
 
 
