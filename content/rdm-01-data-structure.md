@@ -38,7 +38,7 @@
 
 ### Field and experimental data
 
-- When you've entered and checked your data, protect the file from further changes
+- When you've entered and checked your data, set file permissions to protect data from further changes
 
 #--
 <!-- .slide: id="tidydata" -->
@@ -120,20 +120,65 @@
 
 #--
 
-### Data from an external service
+### Data from an external source
 
-- What is the interface for accessing data?
-  - Order form on website
-  - Remote access e.g. ftp
+<ul>
+  <li>
+    What is the interface for accessing data?
+    <ul>
+      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202104/20210418/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
+        <ul>
+          <li>Access via FTP client or web browser</li>
+          <li>Automate using command line scripting</li>
+        </ul>
+      </li>
+      <li><a href="https://www.ncei.noaa.gov/has/HAS.FileAppRouter?datasetname=GFSGRB24&subqueryby=STATION&applname=&outdest=FILE">Order form on website</a></li>
+      <li><a href="https://www.metoffice.gov.uk/services/data/datapoint/about">Web API based access</a> <!-- Example: Met Office DataPoint -->
+        <ul>
+          <li>Register for API key</li>
+          <li>Submit URL based query to access data</li>
+          <li>Data served in XML/JSON format</li>
+          <li>Fair use policy</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-- Do you know how long it will take to get the data that you need?
-- Time to process order request
-- Data size limitations
-  - Download times
-  - Accessing archived data may have greater latency
 
-- Permissions
+#--
 
+### Data from an external source
+
+<ul>
+<li>How long will it take to get the data that you need?
+  <ul>
+    <li>Time to process order request</li>
+    <li>
+      Download times
+    </li>
+  </ul>
+</li>
+<li>
+  Be aware of service limitations
+  <ul>
+    <li>
+      Data size restrictions
+    </li>
+    <li>
+      Potential latency when accessing archived data
+    </li>
+  </ul>
+</li>
+<li>Be alert to changes in data format/contents</li>
+</ul>
+
+#--
+
+### Data from an external source
+
+- What are the licensing terms?
+  - Check license for any restrictions or requirements for use of data
 - How much space do you need to store the data?
 
 #--
@@ -241,53 +286,148 @@ my_script_FINAL2.R
 
 ### Directory structure
 
-- encapsulate work on a project
-- use relative paths - easier to move project directory to diff location
-- store files according to a standard structure e.g. different folders for data, scripts etc
+- An organised and self-contained directory structure will help you to
+    - Encapsulate work on a project
+    - Clarify dependencies between different components
+    - Find your way around when you come back to earlier work
+
+#--
+
+### Directory structure
+
+- Use a standard directory structure e.g. different folders for data, scripts etc
+
+```
+|
+|-- chapter1/
+    |
+    |-- code/
+    |-- data/
+    |-- figures/
+    |--- paper/
+
+```
+
+#--
+
+### Directory structure
+
+- Use relative paths to refer to files within the project directory
+  - Easier to move project directory to different location
+
+#--
+
+#### Example: Relative paths
+
+```
+|
+|-- code/
+|   |-- plot_aq.R
+|
+|-- data/
+|   |-- aq_devonshire_green.csv
+|
+|-- figures/
+|-- paper/
+```
+
+##### `code/plot_aq.R`
 
 
+```r
+mydata <- read.csv("../data/aq_devonshire_green.csv")
+
+# data manipulation and plotting code...
+
+ggsave("../figures/fig1_aq_devonshire_green.png")
+
+```
 
 #--
 
 ### Metadata
 
-- Data that provides information about other data
-- Add value to data
-- Allow use and interpretation
+- Data that describes other data
+- Adds value to data
+  - Enables (re)use and interpretation
+  - Promotes data discovery and long term viability
+
+#--
+
+### Types of metadata
+
+- Descriptive
+  - When and where data collected
+  - Who collected the data
+  - Environmental conditions
+  - Units, precision etc
+  - Methodology
+  - Research questions
+
+#--
+
+### Types of metadata
+
+<!-- - Structural -->
+<!--  - Describes relationships between data components -->
+<!--  - Multi-channel satellite imagery? -->
+<!--  - Genome sequence data - chromosome number -->
 
 
-What sort of things might be recorded?
-[check RDMe materials]
+- Administrative
+  - Creator
+  - Funding info
+  - License info
 
-- when and where data collected
-- environmental conditions
-- units, precision etc
-- methodology
-- research questions
-- creator
-- license info
+#--
 
-Metadata standards
+### Metadata standards
+
+- Using a standardised metadata format makes it easier to find and reuse data
+- Many different, discipline specific [metadata standards](http://rd-alliance.github.io/metadata-directory/standards/)
+- XML schema often used to define structure
+- Software tools for creating and reading metadata
 
 
+#--
+
+#### Example: CF (Climate and Forecast) Metadata Conventions
+
+- Suitable for model-generated climate forecast data and observational datasets
+- Information included:
+  - variable description, units, and prior processing
+  - spatial and temporal coordinates
+  - creation and provenance of data
+- http://cfconventions.org/
 
 #--
 
 ### File formats
 
-- choose correct format for data
-- accessibility/portability
-
-
+<ul>
+<li class="fragment fade-in">Data comes in many different shapes and sizes</li>
+<li class="fragment fade-in">Choose an appropriate format for your data
+<ul>
+<li>Flat vs structured/hierarchical</li>
+<li>Proprietary vs open formats</li>
+</ul>
+</li>
+<li class="fragment fade-in">Consider accessibility/portability
+  <ul>
+  <li>Will you need to use particular software to access your data?</li>
+  </ul>
+</li>
+</ul>
 
 #--
 
 ## Maintaining data integrity<br/>
 
-- Treat your raw data as something that shouldn't be changed
-- Record any pre-processing steps required and store outputs separately
-- Use scripts for pre-processing to aid reproducibility
-
+<ul>
+<li class="fragment fade-in">Treat your raw data as something that shouldn't be changed</li>
+<li class="fragment fade-in">Record any pre-processing steps required and store pre-processed data separately</li>
+<li class="fragment fade-in">Use scripts for pre-processing to aid reproducibility</li>
+</ul>
 
 #--
 ## Storage and backup
@@ -296,15 +436,18 @@ Metadata standards
 #--
 ### Storage space considerations
 
-* How much space do you need? Estimating space.  
-* Who needs access to data?  
-* Does storage space get backed up?  
+* How much space do you need?
+  - What is the size of a typical unit of data?  
+    e.g. daily air quality readings, single model run
+  - How many data units will you create?
+* Who needs access to the data?
+  - File permissions and access requirements
+* Does the storage space get backed up?
+* Can you access stored data to carry out your analysis?
 
 #--
 ### Backing up your data and scripts
 
+- On-site and off-site backup
 - Removable storage
-- 
-
-#==
-
+- Ensuring sufficient capacity

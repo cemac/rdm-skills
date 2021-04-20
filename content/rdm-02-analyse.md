@@ -1,4 +1,6 @@
+<div class="splash">
 <img src="img/data_lifecycle_analyse.png" width="30%" />
+</div>
 
 #--
 
@@ -17,5 +19,5 @@
 
 ## Literate programming?
 
-#==
+
 

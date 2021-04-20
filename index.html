@@ -17,7 +17,10 @@
                   .splash { text-align: center; }
                   .reveal.center .slides section { text-align: left; }
                   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 { text-align: center; }
-                  .footnote { font-size: small }
+                  .reveal h5 { font-size: 70%; }
+                  .reveal dt { color: #1b91ff; }
+                  .footnote { font-size: small; }
+                  .pull-left, .pull-right { float: left; width: 50%; }
                 </style>
 	</head>
 	<body>
@@ -55,14 +58,6 @@
 
                                 </section>
 
-                                <section data-markdown="content/version-control.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
 			</div>
 		</div>
 
@@ -75,10 +70,13 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+			    hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			    // Learn about plugins: https://revealjs.com/plugins/
+			    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+                            // Switch off default slide transitions
+                            //transition: "none",
 			});
 		</script>
 	</body>

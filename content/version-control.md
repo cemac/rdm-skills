@@ -60,31 +60,32 @@ Image: [xkcd.com/1597](https://xkcd.com/1597/)
 #--
 #### Motivation: why use version control?
 
-<div class="left">
-
 Motivation is clear for software development:
 
-- _many developers working on large code base_
+- Many developers working on large code base
 
-- _need to keep track of changes throughout development lifecycle_
+- Need to keep track of changes throughout development lifecycle
 
+
+#--
+#### Motivation: why use version control?
 
 But using <code>git</code> also makes sense for research programmers...
 
-- _document development of research software_
+- Document development of research software
 
-- _collaborate with supervisor or collaborators_
+- Collaborate with supervisor or collaborators
 
-- _track versions corresponding to key checkpoints **i.e. reproducible research**_
-
-</div>
+- Track versions corresponding to key checkpoints **i.e. reproducible research**
 
 #--
 #### Motivation: why use version control?
 
 
 <div class="pull-left">
-## Pros
+
+**Pros**
+
 - Track your changes
 - Clean workspace
 - Archive
@@ -92,14 +93,18 @@ But using <code>git</code> also makes sense for research programmers...
 - Access your work
 - Share your work
 - Collaborate
+
 <!-- - Reproducible research -->
 </div>
 
 <div class="pull-right">
-## Cons
+
+**Cons**
+
 - Learning curve
 - Discipline!
 - Conflict resolution
+
 </div>
 
 #--
@@ -118,59 +123,65 @@ But using <code>git</code> also makes sense for research programmers...
 #--
 #### Version control basics
 
+<div class="splash">
 Modify files in the working directory
 
-<!-- ![Files in the working directory](git-training-figure/git_states-1.png) -->
-<img style="width: 70%" src="img/vc/git_states-1.png" alt="Files in the working directory" />
+<img style="width: 50%" src="img/vc/git_states-1.png" alt="Files in the working directory" />
+</div>
 
 #--
 #### Version control basics
-Stage files to the index
 
-<!-- ![Files staged to the index](git-training-figure/git_states-5.png) -->
-<img style="width: 70%" src="img/vc/git_states-5.png" alt="Files staged to the index" />
+<div class="splash">
+Stage files to the index<br/>
+
+<img style="width: 50%" src="img/vc/git_states-5.png" alt="Files staged to the index" />
+</div>
 
 #--
 #### Version control basics
+
+<div class="splash">
 Commit files (<code class="inline">HEAD</code> = most recent commit)
 
-<!--![Committed files](git-training-figure/git_states-6.png) -->
-<img style="width: 70%" src="img/vc/git_states-6.png" alt="Committed files" />
-
-#--
-#### Version control basics
-- <code class="inline">HEAD</code> references the most recently committed changes<br/><br/>
-
-<!--![Git snapshots/HEAD](img/vc/git_snapshots-1.png) -->
-<img style="width: 70%" src="img/vc/git_snapshots-1.png" alt="Git snapshots/HEAD" />
+<img style="width: 50%" src="img/vc/git_states-6.png" alt="Committed files" />
+</div>
 
 #--
 #### Version control basics
 
-- <code class="inline">HEAD</code> references the most recently committed changes
-- <code class="inline">git commit</code> adds a new link to the chain of commits
+<div class="splash" style="position: relative;">
+<img class="fragment" data-fragment-index="1" style="width: 50%;position:absolute;" src="img/vc/git_snapshots-1.png" alt="Git snapshots/HEAD" />
+<img class="fragment fade-in" data-fragment-index="2" style="width: 50%;" src="img/vc/git_snapshots-2.png" alt="Git snapshots/HEAD" />
+</div>
 
-<!--![Git snapshots/HEAD](img/vc/git_snapshots-2.png) -->
-<img style="width: 70%" src="img/vc/git_snapshots-2.png" alt="Git snapshots/HEAD" />
+<ul>
+<li class="fragment fade-in" data-fragment-index="1"><code class="inline">HEAD</code> references the most recently committed changes</li>
+<li class="fragment fade-in" data-fragment-index="2"><code class="inline">git commit</code> adds a new link to the chain of commits</li>
+</ul>
 
 #--
 #### Basic workflow
 
-- Inspecting your workspace
+<dl>
+<dt>
+Inspect your workspace
+</dt>
+<dd>What changes have you made?</dd>
 
-  - What changes have you made?
+<dt>Stage files</dt>
+<dd>Which changes do you want to record?</dd>
 
-- Staging files
-  - Which changes do you want to record?
+<dt>Commit files</dt>
+<dd>Document and record changes</dd>
 
-- Committing files
-  - Document and record changes
+<dt>Push files</dt>
+<dd>Share to remote repository</dd>
 
-- Pushing files
-  - Share to remote repository
+<dl>
 
 #--
-#### Best practice `git`
+#### Best practice
 
 - Commit code that works
 
@@ -186,11 +197,11 @@ Commit files (<code class="inline">HEAD</code> = most recent commit)
 #--
 ### Practical
 
-#### Preliminaries
+<!-- #### Preliminaries -->
 
-- Install <code>git</code>
-- Sign up for an account on GitHub
-- (Optional) Make sure that RStudio is ready to use git
+<!-- - Install <code>git</code> -->
+<!-- - Sign up for an account on GitHub -->
+<!-- - (Optional) Make sure that RStudio is ready to use git -->
 
 #### Introduction to version control for research
 
