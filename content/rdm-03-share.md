@@ -4,30 +4,25 @@
 
 #--
 
-## Data repositories
-
-- Data centres e.g. BODC
-- CEDA
-- Dryad etc
-
-#--
-
 ## Version control
 
 #--
-#### What's `git`?
+
+### Introduction to version control for research
 
 <img style="float: left; width: 35%" alt="xkcd 1597: git" src="img/vc/xkcd1597_git.png"/>
 
-<div style="float:left; width: 50%; padding-left: 5%">
+<div style="float:left; width: 60%; padding-left: 5%">
+
+#### What's `git`?
 
 <ul>
 <li class="fragment fade-in">
 Version control software
 </li>
-<li class="fragment fade-in">
-Flexible and lightweight design
-</li>
+<!-- <li class="fragment fade-in"> -->
+<!-- Flexible and lightweight design -->
+<!-- </li> -->
 <li class="fragment fade-in">
 Distributed system
 <ul>
@@ -78,6 +73,8 @@ Image: [xkcd.com/1597](https://xkcd.com/1597/)
 #--
 #### Motivation: why use version control?
 
+<ul>
+<li>
 Motivation is clear for software development:
 
 <ul>
@@ -89,9 +86,14 @@ Need to keep track of changes throughout development lifecycle
 </li>
 </ul>
 
+</li>
+</ul>
+
 #--
 #### Motivation: why use version control?
 
+<ul>
+<li>
 But using <code>git</code> also makes sense for research programmers...
 
 <ul>
@@ -99,10 +101,13 @@ But using <code>git</code> also makes sense for research programmers...
 Document development of research software
 </li>
 <li class="fragment fade-in">
-Collaborate with supervisor or collaborators
+Share code with supervisor or collaborators
 </li>
 <li class="fragment fade-in">
 Track versions corresponding to key checkpoints i.e. <strong>reproducible research</strong>
+</li>
+</ul>
+
 </li>
 </ul>
 
@@ -184,25 +189,21 @@ Three representations of file state in <code>git</code>:
 #--
 #### Version control basics
 
-<div class="splash">
+<div class="splash" style="position:relative">
+
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute">
 Modify files in the working directory
 
 <img style="width: 50%" src="img/vc/git_states-1.png" alt="Files in the working directory" />
 </div>
 
-#--
-#### Version control basics
-
-<div class="splash">
-Stage files to the index<br/>
-
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute">
+Stage files to the index
+<br/>
 <img style="width: 50%" src="img/vc/git_states-5.png" alt="Files staged to the index" />
 </div>
 
-#--
-#### Version control basics
-
-<div class="splash">
+<div class="fragment" data-fragment-index="3" style="position:absolute">
 Commit files (<code class="inline">HEAD</code> = most recent commit)
 
 <img style="width: 50%" src="img/vc/git_states-6.png" alt="Committed files" />
@@ -256,6 +257,21 @@ Inspect your workspace
 
 
 #--
+#### Version control for data?
+
+- Version control is not suited for large datasets!
+  - Data is not expected to change frequently/at all
+  - Restrictions on file sizes
+  - Restrictions on redistributing data
+  
+- Deposit data with a suitable **data repository** instead
+
+- Record which data version was used in your analysis scripts
+
+  
+
+
+#--
 ### Practical
 
 <!-- #### Preliminaries -->
@@ -271,6 +287,50 @@ Inspect your workspace
 - Using <code>git</code> on the command line
 - Using <code>git</code> through RStudio
 
+
+#--
+
+## Data repositories
+
+
+#--
+
+### Why use a data repository?
+
+- Publish versioned data for re-use
+- May be requirement of your funder
+- Assign digital object identifiers (DOIs)
+  - Permanently identify your work
+  - Means to cite specific datasets
+- Provide stable long-term access to data
+- Metadata enable search within data repositories
+
+
+#--
+
+### General data repositories
+
+- [Figshare](http://figshare.com/)
+- [Dryad](https://datadryad.org/stash)
+- [Open Science Framework](https://osf.io/)
+- [Zenodo](https://zenodo.org/)
+
+#--
+
+### Specialist data repositories
+
+- Organisation specific repositories e.g. [Research Data Leeds Repository](https://archive.researchdata.leeds.ac.uk/)
+- Domain specific data centres e.g. [EIDC](https://www.ceh.ac.uk/data/nerc-data-centre "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
+
+#--
+
+### Choosing a data repository
+
+- Check guidance from your institution
+- Check requirements from your funder (including licensing)
+- Check usage restriction/charges e.g. limits on data upload and storage
+
+
 #==
 
 <div class="splash">
@@ -281,10 +341,27 @@ Inspect your workspace
 
 ## Archiving and DOIs
 
-- Zenodo
-- Reserve DOI
-- Github link - create release and associated DOI
+- Benefits of archiving your data or code
+  - Long term reference to research outputs
+  - Allows reuse and adaptation (subject to license)
+  - Assigning a DOI means that outputs can be easily cited and located
 
+#--
+
+#### Example: manual upload via [Zenodo](https://zenodo.org/)
+
+- Upload type: dataset, source code etc
+- Reserve DOI so that you can include it in linked research outputs such as published papers
+- Metadata including licensing and funding information
+
+
+#--
+
+#### Example: [Zenodo](https://zenodo.org/) and GitHub
+
+- Link Zenodo and GitHub accounts
+- Create GitHub release
+- Register an associated DOI
 
 #==
 

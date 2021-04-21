@@ -381,6 +381,14 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 
 #--
 
+### Types of metadata
+
+- Structural
+- Provenance
+- Use
+
+#--
+
 ### Metadata standards
 
 - Using a standardised metadata format makes it easier to find and reuse data

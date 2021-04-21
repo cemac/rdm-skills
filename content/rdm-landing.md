@@ -94,8 +94,8 @@ Literate programming
 <img src="img/data_lifecycle_re-use.png" width="50%" style="border: 1px solid transparent;"/>
 </div>
 <p class="left">
-Data repositories<br/>
-Version control<br/><br/><br/>
+Version control<br/>
+Data repositories<br/><br/><br/>
 Archiving and DOIs<br/><br/><br/><br/>
 FAIR data principles
 </p>
