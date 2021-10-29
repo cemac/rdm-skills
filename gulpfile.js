@@ -3,6 +3,7 @@ const path = require('path')
 const glob = require('glob')
 const yargs = require('yargs')
 const colors = require('colors')
+const through = require('through2');
 const qunit = require('node-qunit-puppeteer')
 
 const {rollup} = require('rollup')
@@ -10,11 +11,11 @@ const {terser} = require('rollup-plugin-terser')
 const babel = require('@rollup/plugin-babel').default
 const commonjs = require('@rollup/plugin-commonjs')
 const resolve = require('@rollup/plugin-node-resolve').default
+const sass = require('sass')
 
 const gulp = require('gulp')
 const tap = require('gulp-tap')
 const zip = require('gulp-zip')
-const sass = require('gulp-sass')
 const header = require('gulp-header')
 const eslint = require('gulp-eslint')
 const minify = require('gulp-clean-css')
@@ -59,11 +60,11 @@ const babelConfig = {
 // polyfilling older browsers and a larger bundle.
 const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
 babelConfigESM.presets[0][1].targets = { browsers: [
-    'last 2 Chrome versions', 'not Chrome < 60',
-    'last 2 Safari versions', 'not Safari < 10.1',
-    'last 2 iOS versions', 'not iOS < 10.3',
-    'last 2 Firefox versions', 'not Firefox < 60',
-    'last 2 Edge versions', 'not Edge < 16',
+    'last 2 Chrome versions',
+    'last 2 Safari versions',
+    'last 2 iOS versions',
+    'last 2 Firefox versions',
+    'last 2 Edge versions',
 ] };
 
 let cache = {};
@@ -155,12 +156,34 @@ gulp.task('plugins', () => {
     } ));
 })
 
+// a custom pipeable step to transform Sass to CSS
+function compileSass() {
+  return through.obj( ( vinylFile, encoding, callback ) => {
+    const transformedFile = vinylFile.clone();
+
+    sass.render({
+        data: transformedFile.contents.toString(),
+        includePaths: ['css/', 'css/theme/template']
+    }, ( err, result ) => {
+        if( err ) {
+            console.log( vinylFile.path );
+            console.log( err.formatted );
+        }
+        else {
+            transformedFile.extname = '.css';
+            transformedFile.contents = result.css;
+            callback( null, transformedFile );
+        }
+    });
+  });
+}
+
 gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
-        .pipe(sass())
+        .pipe(compileSass())
         .pipe(gulp.dest('./dist/theme')))
 
 gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
-    .pipe(sass())
+    .pipe(compileSass())
     .pipe(autoprefixer())
     .pipe(minify({compatibility: 'ie9'}))
     .pipe(header(banner))
@@ -173,7 +196,7 @@ gulp.task('qunit', () => {
     let serverConfig = {
         root,
         port: 8009,
-        host: '0.0.0.0',
+        host: 'localhost',
         name: 'test-server'
     }
 
@@ -266,7 +289,7 @@ gulp.task('serve', () => {
     connect.server({
         root: root,
         port: port,
-        host: '0.0.0.0',
+        host: 'localhost',
         livereload: true
     })
 
