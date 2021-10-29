@@ -131,7 +131,17 @@ Data repositories
 
 ### Reproducible reports
 
-- Literate programming blends code snippets with human readable content
-- Document can be processed to run the code and produce outputs
-- Interactive (notebooks) vs generated reports (e.g. Rmarkdown)
-- [Reproducible thesis](https://github.com/philmikejones/thesis)
+<ul>
+<li class="fragment fade-in">
+Literate programming blends code snippets with human readable content
+</li>
+<li class="fragment fade-in">
+Document can be processed to run the code and produce outputs
+</li>
+<li class="fragment fade-in">
+Interactive (notebooks) vs generated reports (e.g. Rmarkdown)
+</li>
+<li class="fragment fade-in">
+<a href="https://github.com/philmikejones/thesis">Reproducible thesis</a>
+</li>
+</ul>

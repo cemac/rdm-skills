@@ -444,14 +444,28 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 #--
 ### Storage space considerations
 
-* How much space do you need?
-  - What is the size of a typical unit of data?  
-    e.g. daily air quality readings, single model run
-  - How many data units will you create?
-* Who needs access to the data?
-  - File permissions and access requirements
-* Does the storage space get backed up?
-* Can you access stored data to carry out your analysis?
+<ul>
+<li class="fragment fade-in">
+How much space do you need?
+<ul>
+<li>What is the size of a typical unit of data?<br/>
+e.g. daily air quality readings, single model run</li>
+<li>How many data units will you create?</li>
+</ul>
+</li>
+<li class="fragment fade-in">
+Who needs access to the data?
+<ul>
+<li>File permissions and access requirements</li>
+</ul>
+</li>
+<li class="fragment fade-in">
+Does the storage space get backed up?
+</li>
+<li class="fragment fade-in">
+Can you access stored data to carry out your analysis?
+</li>
+</ul>
 
 #--
 ### Backing up your data and scripts
