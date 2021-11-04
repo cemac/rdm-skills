@@ -1,12 +1,17 @@
-## Panorama DTP
+<div class="splash" id="splash-final">
 
-### Research Data Management Skills
+<p>
+Data creation and acquisition<br/>
+Organising and describing your data<br/>
+Maintaining data integrity<br/>
+Storage and backup<br/>
+Developing an analysis pipeline<br/>
+Reproducible workflows<br/>
+Literate programming<br/>
+Version control<br/>
+Data repositories<br/>
+Archiving and DOIs<br/>
+FAIR data principles
+</p>
 
-<div class="splash">
-Thanks for your attention!
-
-<img src="img/all_logos-2-scaled.png" />
-
-Tamora James, Centre for Environmental Modelling and Computing, University of Leeds
-<t.d.james1@leeds.ac.uk>
 </div>
