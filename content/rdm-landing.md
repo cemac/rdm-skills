@@ -95,7 +95,7 @@ Literate programming
 </div>
 <p class="left">
 Version control<br/>
-Data repositories<br/><br/><br/>
+Data sharing<br/><br/><br/>
 Archiving and DOIs<br/><br/><br/><br/>
 FAIR data principles
 </p>

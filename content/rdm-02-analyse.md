@@ -10,7 +10,7 @@
 
 <div class="splash r-fit-text">
 <span class="fragment highlight-current-red">Read data</span> &#x2192;
-<span class="fragment highlight-current-red">Preprocessing</span> &#x2192;
+<span class="fragment highlight-current-red">Prepare data</span> &#x2192;
 <span class="fragment highlight-current-red">Analysis</span> &#x2192;
 <span class="fragment highlight-current-red">Output</span>
 </div>
@@ -44,7 +44,7 @@ Responsibility towards funders/the general public
 Research ethics
 </li>
 <li class="fragment fade-in">
-Open Science
+Open and transparent science
 </li>
 </ul>
 
@@ -136,7 +136,7 @@ Data repositories
 Literate programming blends code snippets with human readable content
 </li>
 <li class="fragment fade-in">
-Document can be processed to run the code and produce outputs
+Documents can be processed to run the code and produce outputs in place
 </li>
 <li class="fragment fade-in">
 Interactive (notebooks) vs generated reports (e.g. Rmarkdown)

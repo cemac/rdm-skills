@@ -3,7 +3,7 @@
 </div>
 
 #--
-
+<!-- .slide: id="versioncontrol" -->
 ## Version control
 
 #--
@@ -180,8 +180,8 @@ You tell <code>git</code> which files to manage
 Three representations of file state in <code>git</code>:
 <ul>
 <li>modified files</li>
-<li>staged files (index)</li>
-<li>committed files (<code class="inline">HEAD</code>)</li>
+<li>staged files (changes you want to record)</li>
+<li>committed files (latest record of changes)</li>
 </ul>
 </li>
 </ul>
@@ -198,14 +198,16 @@ Modify files in the working directory
 </div>
 
 <div class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute">
-Stage files to the index
+<!-- Stage files to the index -->
+Choose files to include in snapshot
 <br/>
 <img style="width: 50%" src="img/vc/git_states-5.png" alt="Files staged to the index" />
 </div>
 
 <div class="fragment" data-fragment-index="3" style="position:absolute">
-Commit files (<code class="inline">HEAD</code> = most recent commit)
-
+<!-- Commit files (<code class="inline">HEAD</code> = most recent commit) -->
+Create snapshot of project
+<br/>
 <img style="width: 50%" src="img/vc/git_states-6.png" alt="Committed files" />
 </div>
 
@@ -264,7 +266,7 @@ Inspect your workspace
   - Restrictions on file sizes
   - Restrictions on redistributing data
   
-- Deposit data with a suitable **data repository** instead
+- Deposit data with a suitable <a href="#/datasharing">data repository</a> instead
 
 - Record which data version was used in your analysis scripts
 
@@ -272,38 +274,49 @@ Inspect your workspace
 
 
 #--
-### Practical
+#### More about version control
 
-<!-- #### Preliminaries -->
+- <em>Version control with Git</em>, CEMAC training session<br/>
+Tuesday 30th November, 09:00 - 13:00<br/>
+<span style="font-size:70%">Email <a href="mailto:cemac-support@leeds.ac.uk?subject=CEMAC%20Training">cemac-support@leeds.ac.uk</a> with subject &ldquo;CEMAC Training&rdquo; to sign up</span>
 
-<!-- - Install <code>git</code> -->
-<!-- - Sign up for an account on GitHub -->
-<!-- - (Optional) Make sure that RStudio is ready to use git -->
+- <em>Introduction to version control for research</em><br/>
+<a href="http://bit.ly/intro-vcr">http://bit.ly/intro-vcr</a>
 
-#### Introduction to version control for research
 
-[**http://bit.ly/intro-vcr**](http://bit.ly/intro-vcr)
-
-- Using <code>git</code> on the command line
-- Using <code>git</code> through RStudio
+#--
+<!-- .slide: id="datasharing" -->
+## Data sharing
 
 
 #--
 
-## Data repositories
+### Why share your data?
+
+<ul>
+<li class="fragment fade-in">Make data available for re-use by you or others</li>
+<li class="fragment fade-in">May be requirement of your funder</li>
+<li class="fragment fade-in">Assign digital object identifiers (DOIs)
+<ul>
+<li class="fragment fade-in">Permanently identify your work</li>
+<li class="fragment fade-in">Means to cite specific datasets</li>
+</ul>
+</li>
+<li class="fragment fade-in">Provide stable, long-term access to data</li>
+<li class="fragment fade-in">Enable metadata-based search within data repositories</li>
+</ul>
 
 
 #--
 
-### Why use a data repository?
+### Choosing a data repository
 
-- Publish versioned data for re-use
-- May be requirement of your funder
-- Assign digital object identifiers (DOIs)
-  - Permanently identify your work
-  - Means to cite specific datasets
-- Provide stable long-term access to data
-- Metadata enable search within data repositories
+<ul>
+  <li class="fragment fade-in">Check guidance from your institution</li>
+  <li class="fragment fade-in">Check requirements from your funder (including <a href="#/datalicensing">licensing</a> requirements)</li>
+  <li class="fragment fade-in">Check usage restriction/charges e.g. limits on data upload and storage</li>
+  <li class="fragment fade-in">Check requirements on data format, e.g. metadata</li>
+</ul>
 
 
 #--
@@ -322,14 +335,27 @@ Inspect your workspace
 - Organisation specific repositories e.g. [Research Data Leeds Repository](https://archive.researchdata.leeds.ac.uk/)
 - Domain specific data centres e.g. [EIDC](https://www.ceh.ac.uk/data/nerc-data-centre "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
 
+
 #--
+<!-- .slide: id="datalicensing" -->
+### Data licensing
 
-### Choosing a data repository
-
-- Check guidance from your institution
-- Check requirements from your funder (including licensing)
-- Check usage restriction/charges e.g. limits on data upload and storage
-
+<ul>
+<li class="fragment fade-in">Make it clear how others can use your data
+<li class="fragment fade-in">Could include requirements about
+  <ul>
+    <li class="fragment fade-in">Attribution</li>
+    <li class="fragment fade-in">Sharing and modification</li>
+    <li class="fragment fade-in">Licensing of derivatives</li>
+  </ul>
+<li class="fragment fade-in">License types
+  <ul>
+    <li class="fragment fade-in">Public domain</li>
+    <li class="fragment fade-in">Creative Commons licenses</li>
+    <li class="fragment fade-in">Open Data Commons licenses</li>
+  </ul>
+<li class="fragment fade-in">Check licensing requirements of your funders
+</li>
 
 #==
 
@@ -337,14 +363,21 @@ Inspect your workspace
 <img src="img/data_lifecycle_archive.png" width="30%" />
 </div>
 
+
 #--
 
 ## Archiving and DOIs
 
-- Benefits of archiving your data or code
-  - Long term reference to research outputs
-  - Allows reuse and adaptation (subject to license)
-  - Assigning a DOI means that outputs can be easily cited and located
+<ul>
+  <li class="fragment fade-in">Benefits of archiving your data or code
+    <ul>
+      <li class="fragment fade-in">Long term reference to research outputs</li>
+      <li class="fragment fade-in">Allows reuse and adaptation (subject to license)</li>
+      <li class="fragment fade-in">Assigning a DOI means that outputs can be easily cited and located</li>
+    </ul>
+  </li>
+</ul>
+
 
 #--
 

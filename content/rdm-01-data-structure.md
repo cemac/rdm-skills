@@ -15,7 +15,7 @@
 
 ### Field and experimental data
 
-- Use your lab and field notes to record information that will be required for correct interpretation of data
+- Use your lab and field notes to record information that will be required for correct interpretation of the data
   - e.g. butterfly monitoring, record wind/sun
   - e.g. experimental data, record instruments and settings
 
@@ -48,9 +48,23 @@
   - Variables (things that you've measured for each unit)
   - Observations (all measurements for a single unit)
 
+<span class="footnote"><a href="https://www.jstatsoft.org/article/view/v059i10">Tidy Data, Wickham, 2014, Journal of Statistical Software</a></span>
+
+#--
+
+### Tidy data principles
+
 - Variables are stored in **columns**, observations are stored in **rows**
 
-<span class="footnote"><a href="https://www.jstatsoft.org/article/view/v059i10">Tidy Data, Wickham, 2014, Journal of Statistical Software</a></span>
+<div class="splash">
+<img src="img/tidy-1.png" width="70%" />
+</div>
+
+<p class="footnote">
+  Image re-used under a <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0</a> license from <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community materials.
+  DOI: <a href="https://doi.org/10.5281/zenodo.3233853">https://doi.org/10.5281/zenodo.3233853</a>
+</p>
+
 
 #--
 
@@ -73,7 +87,7 @@
 
 #### Example: Tidy data
 
-<span style="font-size:smaller">Hourly measured PM2.5 particulate matter, Sheffield Devonshire Green</span>
+<span style="font-size:66%">Hourly measured PM2.5 particulate matter, Devonshire Green, Sheffield</span>
 
 ```[1-5|2|1]
 |Date      |01:00 |02:00 |03:00 | ...
@@ -93,7 +107,7 @@
 
 #### Example: Tidy data
 
-<span style="font-size:smaller">Hourly measured PM2.5 particulate matter, Sheffield Devonshire Green</span>
+<span style="font-size:66%">Hourly measured PM2.5 particulate matter, Devonshire Green, Sheffield</span>
 
 ```[1-4,6-8,10-12,14-16|2|3|4|2-5|2,6,10,14]
 |Date      |Time |PM2_5 |
@@ -126,7 +140,7 @@
   <li>
     What is the interface for accessing data?
     <ul>
-      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202104/20210418/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
+      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202111/20211106/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
         <ul>
           <li>Access via FTP client or web browser</li>
           <li>Automate using command line scripting</li>
@@ -207,7 +221,9 @@
 
 ### File naming conventions
 
-- Use file names to reflect logical order of work
+- Use file names to reflect logical order of workflows
+
+<span class="fragment fade-in-then-out">
 
 <pre><code data-trim data-noescape>
 <span class="hljs-strong">01</span>-import_data.R
@@ -216,30 +232,70 @@
 </code>
 </pre>
 
+</span>
+
+<span class="fragment fade-in">
+
+<pre><code data-trim data-noescape>
+<span class="hljs-strong">01a</span>-import_data.R
+<span class="hljs-strong">01b</span>-preprocess_data.R
+<span class="hljs-strong">02</span>-first_analysis.R
+<span class="hljs-strong">03</span>-second_analysis.R
+</code>
+</pre>
+
+</span>
+
 #--
 
 ### File naming conventions
 
 <div class="left">
 
-- Use ISO 8601 format for dates: `YYYY-MM-DD` or `YYYYMMDD`
+- Use file names to organise data or outputs
+
+<span class="fragment fade-in">
+
+<pre><code data-trim data-noescape>
+<span class="hljs-strong">01Oct2021</span>_extended.gif
+<span class="hljs-strong">01Oct2021</span>_extended_domain.png
+<span class="hljs-strong">01Oct2021</span>_extended_lsta_imerg.png
+<span class="hljs-strong">01Sep2021</span>_extended.gif
+<span class="hljs-strong">01Sep2021</span>_extended_domain.png
+<span class="hljs-strong">01Sep2021</span>_extended_lsta_imerg.png
+<span class="hljs-strong">02Oct2021</span>_extended_domain.png
+<span class="hljs-strong">02Oct2021</span>_extended_lsta_imerg.png
+</code></pre>
+
+</span>
+
+</div>
+
+#--
+
+### File naming conventions
+
+<div class="left">
+
+- Use ISO 8601 format for dates in filenames: <code><span class="hljs-strong">YYYY-MM-DD</span></code> or <code><span class="hljs-strong">YYYYMMDD</span></code>
 
 <span class="fragment fade-in">
 
 - Ensures correct order when listing files
 
-<span class="fragment fade-in-then-out">
-<pre><code data-trim data-noescape>
-GFSanalysis_EA_<span class="hljs-strong">21042021</span>_06_DPTMP2_SNGL.png
-GFSanalysis_EA_<span class="hljs-strong">27082020</span>_06_DPTMP2_SNGL.png
-</code></pre>
-</span>
+<span class="fragment fade-in">
 
-<span class="fragment fade-up">
 <pre><code data-trim data-noescape>
-GFSanalysis_EA_<span class="hljs-strong">20200827</span>_06_DPTMP2_SNGL.png
-GFSanalysis_EA_<span class="hljs-strong">20210421</span>_06_DPTMP2_SNGL.png
+<span class="hljs-strong">2021-09-01</span>_extended.gif
+<span class="hljs-strong">2021-09-01</span>_extended_domain.png
+<span class="hljs-strong">2021-09-01</span>_extended_lsta_imerg.png
+<span class="hljs-strong">2021-10-01</span>_extended.gif
+<span class="hljs-strong">2021-10-01</span>_extended_domain.png
+<span class="hljs-strong">2021-10-01</span>_extended_lsta_imerg.png
+<span class="hljs-strong">2021-10-02</span>_extended_domain.png
+<span class="hljs-strong">2021-10-02</span>_extended_lsta_imerg.png
 </code></pre>
+
 </span>
 
 </span>
@@ -273,14 +329,21 @@ GFSanalysis_EA_<span class="hljs-strong">20210421</span>_06_DPTMP2_SNGL.png
 
 ### File naming conventions
 
-- Avoid making multiple versions of files &ndash; use version control instead!
+- Avoid making multiple versions of files &ndash; use <a href="#/versioncontrol">version control</a> instead!
 
-```
+<span class="fragment fade-in">
+
+<pre><code data-trim data-noescape>
 my_script.R
-my_script_second_version.R
-my_script_FINAL.R
-my_script_FINAL2.R
-```
+my_script<span class="hljs-strong">_second_version</span>.R
+my_script<span class="hljs-strong">_FINAL</span>.R
+my_script<span class="hljs-strong">_FINAL_latest</span>.R
+</code></pre>
+</span>
+
+<span class="fragment fade-in">
+- More about version control later...
+</span>
 
 #--
 
@@ -298,14 +361,46 @@ my_script_FINAL2.R
 - Use a standard directory structure e.g. different folders for data, scripts etc
 
 ```
-|
+.
 |-- chapter1/
     |
     |-- code/
     |-- data/
     |-- figures/
-    |--- paper/
+    |-- paper/
 
+```
+
+<span class="fragment fade-in">
+
+- Project templates can be useful for setting up standardised directory structure
+
+</span>
+
+#--
+
+### Directory structure
+
+- https://github.com/bvreede/good-enough-project
+
+```
+.
+|-- CITATION.md
+|-- config
+|-- data
+|   |-- processed
+|   |-- raw
+|   |-- temp
+|-- docs
+|   |-- manuscript
+|-- |-- reports
+|-- LICENSE.md
+|-- README.md
+|-- requirements.txt
+|-- results
+|-- |-- figures
+|-- |-- output
+|-- src
 ```
 
 #--
@@ -433,8 +528,8 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 
 <ul>
 <li class="fragment fade-in">Treat your raw data as something that shouldn't be changed</li>
-<li class="fragment fade-in">Record any pre-processing steps required and store pre-processed data separately</li>
-<li class="fragment fade-in">Use scripts for pre-processing to aid reproducibility</li>
+<li class="fragment fade-in">Record any processing steps required and store processed data separately</li>
+<li class="fragment fade-in">Use scripts for processing data to aid reproducibility</li>
 </ul>
 
 #--
@@ -472,4 +567,6 @@ Can you access stored data to carry out your analysis?
 
 - On-site and off-site backup
 - Removable storage
+- Frequency of backup
 - Ensuring sufficient capacity
+- Transfer speed

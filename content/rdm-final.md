@@ -1,3 +1,5 @@
+### Research Data Management Skills
+
 <div class="splash" id="splash-final">
 
 <p>
@@ -9,7 +11,7 @@ Developing an analysis pipeline<br/>
 Reproducible workflows<br/>
 Literate programming<br/>
 Version control<br/>
-Data repositories<br/>
+Data sharing<br/>
 Archiving and DOIs<br/>
 FAIR data principles
 </p>
