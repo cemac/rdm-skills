@@ -333,7 +333,7 @@ Tuesday 30th November, 09:00 - 13:00<br/>
 ### Specialist data repositories
 
 - Organisation specific repositories e.g. [Research Data Leeds Repository](https://archive.researchdata.leeds.ac.uk/)
-- Domain specific data centres e.g. [EIDC](https://www.ceh.ac.uk/data/nerc-data-centre "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
+- Domain specific data centres e.g. [EIDC](https://www.ceh.ac.uk/nerc-data-centre "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
 
 
 #--
@@ -426,7 +426,7 @@ Also helpful for humans!
 
 #--
 
-## What's FAIR data?
+### What's FAIR data?
 
 <div class="splash">
   <img src="img/fairprinciples.jpg" width="66%" />
@@ -439,7 +439,7 @@ Also helpful for humans!
 
 #--
 
-## FAIR data principles
+### FAIR data principles
 
 <dl>
 <dt class="fragment fade-in">Findable</dt>

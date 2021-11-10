@@ -100,7 +100,7 @@
     .
 ```
 
-<span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
+<span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
 
 
 #--
@@ -129,7 +129,7 @@
 |...       |...  |...   |
 ```
 
-<span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
+<span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
 
 
 #--
@@ -277,7 +277,8 @@
 
 <div class="left">
 
-- Use ISO 8601 format for dates in filenames: <code><span class="hljs-strong">YYYY-MM-DD</span></code> or <code><span class="hljs-strong">YYYYMMDD</span></code>
+- Use ISO 8601 format for dates in filenames:<br/>
+<span class="codex"><code><span class="hljs-strong">YYYY-MM-DD</span></code> or <code><span class="hljs-strong">YYYYMMDD</span></code></span>
 
 <span class="fragment fade-in">
 
@@ -297,6 +298,13 @@
 </code></pre>
 
 </span>
+
+</span>
+
+<span class="fragment fade-in">
+
+- Representing date and time:<br/>
+<span class="codex"><code><span class="hljs-strong">YYYY-MM-DD</span>T<span class="hljs-strong">HH:mm:ss</span>Z</code> or <code><span class="hljs-strong">YYYYMMDD</span>T<span class="hljs-strong">HHmmss</span>Z</code></span>
 
 </span>
 
@@ -379,7 +387,7 @@ my_script<span class="hljs-strong">_FINAL_latest</span>.R
 
 #--
 
-### Directory structure
+#### Example: using a project template
 
 - https://github.com/bvreede/good-enough-project
 
@@ -487,21 +495,22 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 ### Metadata standards
 
 - Using a standardised metadata format makes it easier to find and reuse data
-- Many different, discipline specific [metadata standards](http://rd-alliance.github.io/metadata-directory/standards/)
+- Many different, discipline specific metadata standards (see e.g. [RDA Metadata Directory](http://rd-alliance.github.io/metadata-directory/standards/), [FAIRsharing.org](https://fairsharing.org/standards/))
 - XML schema often used to define structure
 - Software tools for creating and reading metadata
 
 
 #--
 
-#### Example: CF (Climate and Forecast) Metadata Conventions
+#### Example: [Climate and Forecast Metadata Conventions](http://cfconventions.org/)
 
 - Suitable for model-generated climate forecast data and observational datasets
 - Information included:
   - variable description, units, and prior processing
   - spatial and temporal coordinates
   - creation and provenance of data
-- http://cfconventions.org/
+- Includes a standard name table for identifying physical quantities
+
 
 #--
 
