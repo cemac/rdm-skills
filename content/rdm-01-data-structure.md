@@ -1,14 +1,10 @@
-<div class="splash">
-<img src="img/data_lifecycle_create.png" width="30%" />
-</div>
-
-#--
-
+<!-- .slide: id="datacreation" -->
 ## Data creation and acquisition
 
 #--
 
 - Collecting data from field or lab work
+- Generating data from model runs
 - Acquiring data from another source or service e.g. satellite data
 
 #--
@@ -18,6 +14,7 @@
 - Use your lab and field notes to record information that will be required for correct interpretation of the data
   - e.g. butterfly monitoring, record wind/sun
   - e.g. experimental data, record instruments and settings
+  - e.g. model run, record software versions and inputs
 
 #--
 
@@ -75,12 +72,12 @@
 <dl style="font-size:smaller">
   <dt>Filter</dt>
   <dd>Choose observations</dd>
-  <dt>Transform</dt>
-  <dd>Calculate new values from measured variables</dd>
   <dt>Aggregate</dt>
   <dd>Create summary statistics</dd>
   <dt>Sort</dt>
   <dd>Order data by values of a given variable</dd>
+  <dt>Transform</dt>
+  <dd>Calculate new values from measured variables</dd>
 </dl>
 
 #--
@@ -89,7 +86,7 @@
 
 <span style="font-size:66%">Hourly measured PM2.5 particulate matter, Devonshire Green, Sheffield</span>
 
-```[1-5|2|1]
+```[1-5|1|2]
 |Date      |01:00 |02:00 |03:00 | ...
 |01/01/2020|33.019|26.321|26.179|
 |02/01/2020|12.948|9.906 |8.774 |
@@ -140,7 +137,7 @@
   <li>
     What is the interface for accessing data?
     <ul>
-      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202111/20211106/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
+      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202210/20221031/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
         <ul>
           <li>Access via FTP client or web browser</li>
           <li>Automate using command line scripting</li>
@@ -195,23 +192,34 @@
   - Check license for any restrictions or requirements for use of data
 - How much space do you need to store the data?
 
+
 #--
 
+### Maintaining data integrity<br/>
+
+<ul>
+<li class="fragment fade-in">Treat your raw data as something that shouldn't be changed</li>
+<li class="fragment fade-in">Record any processing steps required and store processed data separately</li>
+<li class="fragment fade-in">Use scripts for processing data to aid reproducibility</li>
+</ul>
+
+#==
+<!-- .slide: id="dataorganisation" -->
 ## Organising and describing your data<br/>
 
 #--
 
 <ul>
-  <li>Working to accepted standards will make your data easier to understand
+  <li>Working to standard conventions will make your data easier to understand
     <ul>
       <li class="fragment fade-in">
         File naming conventions</li>
       <li class="fragment fade-in">
         Directory structure</li>
       <li class="fragment fade-in">
-        Describing your data using metadata</li>
-      <li class="fragment fade-in">
         File formats</li>
+      <li class="fragment fade-in">
+        Describing your data using metadata</li>
     </ul>
   </li>
 </ul>
@@ -225,7 +233,7 @@
 
 <span class="fragment fade-in-then-out">
 
-<pre><code data-trim data-noescape>
+<pre><code data-trim data-noescape class="language-plaintext">
 <span class="hljs-strong">01</span>-import_data.R
 <span class="hljs-strong">02</span>-first_analysis.R
 <span class="hljs-strong">03</span>-second_analysis.R
@@ -236,7 +244,7 @@
 
 <span class="fragment fade-in">
 
-<pre><code data-trim data-noescape>
+<pre><code data-trim data-noescape class="language-plaintext">
 <span class="hljs-strong">01a</span>-import_data.R
 <span class="hljs-strong">01b</span>-preprocess_data.R
 <span class="hljs-strong">02</span>-first_analysis.R
@@ -256,7 +264,7 @@
 
 <span class="fragment fade-in">
 
-<pre><code data-trim data-noescape>
+<pre><code data-trim data-noescape class="language-plaintext">
 <span class="hljs-strong">01Oct2021</span>_extended.gif
 <span class="hljs-strong">01Oct2021</span>_extended_domain.png
 <span class="hljs-strong">01Oct2021</span>_extended_lsta_imerg.png
@@ -286,7 +294,7 @@
 
 <span class="fragment fade-in">
 
-<pre><code data-trim data-noescape>
+<pre><code data-trim data-noescape class="language-plaintext">
 <span class="hljs-strong">2021-09-01</span>_extended.gif
 <span class="hljs-strong">2021-09-01</span>_extended_domain.png
 <span class="hljs-strong">2021-09-01</span>_extended_lsta_imerg.png
@@ -321,10 +329,10 @@
  S_NWC_CRR_MSG4_global-VISIR_20210219T100000Z.nc
 
 |-|---|---|----|------------|----------------|
-        |    |     |                 |
-     product |   domain       date/timestamp
-             |
-         satellite
+   |    |    |       |              |
+   | product |     domain           |
+   |         |                      |
+service  satellite           date/timestamp
 ```
 
 <ul>
@@ -341,7 +349,7 @@
 
 <span class="fragment fade-in">
 
-<pre><code data-trim data-noescape>
+<pre><code data-trim data-noescape class="language-plaintext">
 my_script.R
 my_script<span class="hljs-strong">_second_version</span>.R
 my_script<span class="hljs-strong">_FINAL</span>.R
@@ -358,9 +366,9 @@ my_script<span class="hljs-strong">_FINAL_latest</span>.R
 ### Directory structure
 
 - An organised and self-contained directory structure will help you to
-    - Encapsulate work on a project
-    - Clarify dependencies between different components
-    - Find your way around when you come back to earlier work
+  - Encapsulate work on a project <!-- .element: class="fragment fade-in" -->
+  - Clarify dependencies between different components <!-- .element: class="fragment fade-in" -->
+  - Find your way around when you come back to earlier work <!-- .element: class="fragment fade-in" -->
 
 #--
 
@@ -415,27 +423,48 @@ my_script<span class="hljs-strong">_FINAL_latest</span>.R
 
 ### Directory structure
 
-- Use relative paths to refer to files within the project directory
-  - Easier to move project directory to different location
+- Use <strong>relative</strong> rather than <strong>absolute</strong> paths to refer to files within your project directory
+  - Paths shorter and easier to understand <!-- .element: class="fragment fade-in" -->
+  - Easier to move your project directory to a different location <!-- .element: class="fragment fade-in" -->
+
+
+<span class="fragment fade-in">
+<pre><code data-trim data-noescape class="language-plaintext">
+<span class="hljs-strong">/path/to/chapter2/</span>code/my_script.R
+</code></pre>
+</span>
+
+<span class="fragment fade-in">
+<pre><code data-trim data-noescape class="language-plaintext">
+<span class="hljs-strong">./</span>code/my_script.R
+<span class="hljs-strong">../</span>chapter1/code/another_useful_script.R
+</code></pre>
+
+</span>
 
 #--
-
+<!-- .slide: id="relativepaths" -->
 #### Example: Relative paths
 
 ```
-|
-|-- code/
-|   |-- plot_aq.R
-|
-|-- data/
-|   |-- aq_devonshire_green.csv
-|
-|-- figures/
-|-- paper/
+.
+|-- chapter1/
+    |
+    |-- code/
+    |   |-- plot_aq.R
+    |
+    |-- data/
+    |   |-- aq_devonshire_green.csv
+    |
+    |-- figures/
+    |-- paper/
 ```
+
+<span class="fragment fade-in">
 
 ##### `code/plot_aq.R`
 
+<span class="fragment fade-in">
 
 ```r
 mydata <- read.csv("../data/aq_devonshire_green.csv")
@@ -446,70 +475,8 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 
 ```
 
-#--
-
-### Metadata
-
-- Data that describes other data
-- Adds value to data
-  - Enables (re)use and interpretation
-  - Promotes data discovery and long term viability
-
-#--
-
-### Types of metadata
-
-- Descriptive
-  - When and where data collected
-  - Who collected the data
-  - Environmental conditions
-  - Units, precision etc
-  - Methodology
-  - Research questions
-
-#--
-
-### Types of metadata
-
-<!-- - Structural -->
-<!--  - Describes relationships between data components -->
-<!--  - Multi-channel satellite imagery? -->
-<!--  - Genome sequence data - chromosome number -->
-
-
-- Administrative
-  - Creator
-  - Funding info
-  - License info
-
-#--
-
-### Types of metadata
-
-- Structural
-- Provenance
-- Use
-
-#--
-
-### Metadata standards
-
-- Using a standardised metadata format makes it easier to find and reuse data
-- Many different, discipline specific metadata standards (see e.g. [RDA Metadata Directory](http://rd-alliance.github.io/metadata-directory/standards/), [FAIRsharing.org](https://fairsharing.org/standards/))
-- XML schema often used to define structure
-- Software tools for creating and reading metadata
-
-
-#--
-
-#### Example: [Climate and Forecast Metadata Conventions](http://cfconventions.org/)
-
-- Suitable for model-generated climate forecast data and observational datasets
-- Information included:
-  - variable description, units, and prior processing
-  - spatial and temporal coordinates
-  - creation and provenance of data
-- Includes a standard name table for identifying physical quantities
+</span>
+</span>
 
 
 #--
@@ -531,17 +498,118 @@ ggsave("../figures/fig1_aq_devonshire_green.png")
 </li>
 </ul>
 
+
 #--
 
-## Maintaining data integrity<br/>
+### Hierarchical data formats
 
 <ul>
-<li class="fragment fade-in">Treat your raw data as something that shouldn't be changed</li>
-<li class="fragment fade-in">Record any processing steps required and store processed data separately</li>
-<li class="fragment fade-in">Use scripts for processing data to aid reproducibility</li>
+  <li class="fragment fade-in">
+    Hierarchical data uses internal structure to store metadata
+  </li>
+  <li class="fragment fade-in">
+    This allows a dataset to be self-describing and promotes portability and scalability
+  </li>
+  <li class="fragment fade-in">
+    NetCDF is a commonly used hierarchical data format
+  </li>
+</ul>
+
+<!-- <p class="footnote"><a href="https://www.unidata.ucar.edu/software/netcdf/index.html">https://www.unidata.ucar.edu/software/netcdf/index.html</a></p> -->
+
+#--
+
+<!-- .slide: id="metadata" -->
+### Metadata
+
+<ul>
+  <li class="fragment fade-in">
+    Metadata is data that describes other data</li>
+  <li class="fragment fade-in">
+    Attaching metadata to a dataset allows others to find and use the data effectively
+  </li>
+  <li class="fragment fade-in">
+    Metadata can be stored separately or embedded within a data file
 </ul>
 
 #--
+
+### Benefits of metadata
+
+<ul>
+  <li class="fragment fade-in">
+    Attaching metadata to a dataset adds value by
+    <ul>
+      <li class="fragment fade-in">
+        Promoting (re)use and interpretation
+      </li>
+      <li class="fragment fade-in">
+        Enabling data discovery through metadata-based search within data repositories
+      </li>
+      <li class="fragment fade-in">
+        Enhancing the long-term viability of data
+      </li>
+    </ul>
+  </li>
+</ul>
+
+#--
+
+### Types of metadata
+
+<ul>
+  <li class="fragment fade-in">
+    Descriptive (when, where and by whom were the data collected, research questions, methodology, units/precision)</li>
+    <li class="fragment fade-in">
+      Administrative (license, funders, version)</li>
+  <li class="fragment fade-in">
+    Structural (archive/file structure, number of files)</li>
+  <li class="fragment fade-in">
+    Provenance (source of raw data, processing steps)
+  </li>
+</ul>
+
+
+#--
+
+### Metadata standards
+
+<ul>
+  <li class="fragment fade-in">
+    Using a standardised metadata format makes it easier to find and (re)use data
+  </li>
+  <li class="fragment fade-in">There are many different, discipline specific metadata standards (see e.g. <a href="http://rd-alliance.github.io/metadata-directory/standards/">RDA Metadata Directory</a>, <a href="https://fairsharing.org/standards/">FAIRsharing.org</a>)</li>
+  <li class="fragment fade-in">Metadata format is often defined by an XML schema</li>
+  <li class="fragment fade-in">Software tools for creating and reading metadata</li>
+</ul>
+
+
+#--
+
+#### Example: [Climate and Forecast Metadata Conventions](http://cfconventions.org/)
+
+<ul>
+  <li class="fragment fade-in">
+    Suitable for model-generated climate forecast data and observational datasets</li>
+  <li class="fragment fade-in">
+    Information included:
+    <ul>
+      <li class="fragment fade-in">
+        variable description, units, and prior processing
+      </li>
+      <li class="fragment fade-in">
+        spatial and temporal coordinates
+      </li>
+      <li class="fragment fade-in">
+        creation and provenance of data
+      </li>
+    </ul>
+  </li>
+  <li class="fragment fade-in">Provides <a href="http://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html">standard name table</a> for identifying physical quantities</li>
+</ul>
+
+#==
+<!-- .slide: id="datastorage" -->
 ## Storage and backup
 
 

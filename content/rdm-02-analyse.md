@@ -4,28 +4,16 @@
 
 #--
 
-## Developing an analysis pipeline
+- Reproducible workflows
+  - What is reproducibility? <!-- .element class="smaller" -->
+  - Software as a research output <!-- .element class="smaller" -->
+  - Developing an analysis pipeline <!-- .element class="smaller" -->
+  - Steps towards reproducibility <!-- .element class="smaller" -->
+- Literate programming
+  - Reproducible reports <!-- .element class="smaller" -->
+- Version control
 
-#--
-
-<div class="splash r-fit-text">
-<span class="fragment highlight-current-red">Read data</span> &#x2192;
-<span class="fragment highlight-current-red">Prepare data</span> &#x2192;
-<span class="fragment highlight-current-red">Analysis</span> &#x2192;
-<span class="fragment highlight-current-red">Output</span>
-</div>
-
-
-<!-- - Read data -->
-<!-- - Preprocessing -->
-<!--   - Cleaning -->
-<!--   - Merging -->
-<!-- - Analysis -->
-<!-- - Output -->
-<!--   - Figures -->
-<!--   - Tables -->
-
-#--
+#==
 
 ## Reproducible workflows
 
@@ -55,12 +43,36 @@ Open and transparent science
 
 <ul>
 <li class="fragment fade-in">
-Integral part of creating reproducible research
+Software is an integral part of the research pipeline
 </li>
 <li class="fragment fade-in">
-Code curation and availability
+Code curation and availability is essential for reproducible research
 </li>
 </ul>
+
+#--
+
+### Developing an analysis pipeline
+
+<br/>
+
+<div class="splash r-fit-text">
+<span class="fragment highlight-current-red">Read data</span> &#x2192;
+<span class="fragment highlight-current-red">Prepare data</span> &#x2192;
+<span class="fragment highlight-current-red">Analysis</span> &#x2192;
+<span class="fragment highlight-current-red">Output</span>
+</div>
+
+
+<!-- - Read data -->
+<!-- - Preprocessing -->
+<!--   - Cleaning -->
+<!--   - Merging -->
+<!-- - Analysis -->
+<!-- - Output -->
+<!--   - Figures -->
+<!--   - Tables -->
+
 
 #--
 
@@ -123,7 +135,7 @@ Data repositories
 </li>
 </ul>
 
-#--
+#==
 
 ## Literate programming
 

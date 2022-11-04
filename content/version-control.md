@@ -1,29 +1,26 @@
-## Version control for research using git
+<!-- .slide: id="versioncontrol" -->
+## Version control
 
 #--
-#### What's `git`?
+
+### Introduction to version control for research
 
 <img style="float: left; width: 35%" alt="xkcd 1597: git" src="img/vc/xkcd1597_git.png"/>
+
+<div style="float:left; width: 60%; padding-left: 5%">
+
+#### What's `git`?
+
+- Version control software <!-- .element class="fragment fade-in" -->
+- Distributed system <!-- .element class="fragment fade-in" -->
+  - Each copy of a project contains all the information it needs to stand alone <!-- .element class="fragment fade-in smaller" -->
+- Suitable for tracking code and text-based formats <!-- .element class="fragment fade-in" -->
+
+</div>
 
 <div style="clear: left; font-size: 50%;">
 
 Image: [xkcd.com/1597](https://xkcd.com/1597/)
-
-</div>
-
-#--
-#### What's `git`?
-
-<!-- <img style="float: left; width: 50%; background: white;" alt="Distributed version control system" src="img/vc/Distributed_VCS.png"/> -->
-
-<div class="left">
-
-- Version control software
-
-- Flexible and lightweight design
-
-- Distributed system
-  - Each copy of a <code>git</code>-managed project contains all the information it needs to stand alone
 
 </div>
 
@@ -54,17 +51,14 @@ Image: [xkcd.com/1597](https://xkcd.com/1597/)
 - Public and private repositories
 </div>
 
-<!--<span class="footnote">For unrestricted private repositories on GitHub, sign up at https://education.github.com</span>-->
-
 
 #--
 #### Motivation: why use version control?
 
 Motivation is clear for software development:
 
-- Many developers working on large code base
-
-- Need to keep track of changes throughout development lifecycle
+- Many developers working on large code base <!-- .element class="fragment fade-in" -->
+- Need to keep track of changes throughout development lifecycle <!-- .element class="fragment fade-in" -->
 
 
 #--
@@ -72,11 +66,9 @@ Motivation is clear for software development:
 
 But using <code>git</code> also makes sense for research programmers...
 
-- Document development of research software
-
-- Collaborate with supervisor or collaborators
-
-- Track versions corresponding to key checkpoints **i.e. reproducible research**
+- Document development of research software<!-- .element class="fragment fade-in" -->
+- Share code with supervisor or collaborators<!-- .element class="fragment fade-in" -->
+- Track versions corresponding to key checkpoints i.e. reproducible research <!-- .element class="fragment fade-in" -->
 
 #--
 #### Motivation: why use version control?
@@ -84,26 +76,26 @@ But using <code>git</code> also makes sense for research programmers...
 
 <div class="pull-left">
 
-**Pros**
+**Pros** <!-- .element class="fragment fade-in" -->
 
-- Track your changes
-- Clean workspace
-- Archive
-- Experiment
-- Access your work
-- Share your work
-- Collaborate
+- Track your changes <!-- .element class="fragment fade-in" -->
+- Clean workspace <!-- .element class="fragment fade-in" -->
+- Archive <!-- .element class="fragment fade-in" -->
+- Experiment <!-- .element class="fragment fade-in" -->
+- Access your work <!-- .element class="fragment fade-in" -->
+- Share your work <!-- .element class="fragment fade-in" -->
+- Collaborate <!-- .element class="fragment fade-in" -->
+- Reproducibility <!-- .element class="fragment fade-in" -->
 
-<!-- - Reproducible research -->
 </div>
 
 <div class="pull-right">
 
-**Cons**
+**Cons** <!-- .element class="fragment fade-in" -->
 
-- Learning curve
-- Discipline!
-- Conflict resolution
+- Learning curve <!-- .element class="fragment fade-in" -->
+- Discipline! <!-- .element class="fragment fade-in" -->
+- Conflict resolution <!-- .element class="fragment fade-in" -->
 
 </div>
 
@@ -111,39 +103,45 @@ But using <code>git</code> also makes sense for research programmers...
 
 #### Version control basics
 
-- A <code>git</code> project is simply a directory with some hidden files for bookkeeping
-
-- You tell <code>git</code> which files to manage
-
-- Three representations of file state in <code>git</code>:
-  * modified files
-  * staged files (index)
-  * committed files (<code class="inline">HEAD</code>)
+<ul>
+<li class="fragment fade-in">
+A <code>git</code> project is simply a directory with some hidden files for bookkeeping
+</li>
+<li class="fragment fade-in">
+You tell <code>git</code> which files to manage
+</li>
+<li class="fragment fade-in">
+Three representations of file state in <code>git</code>:
+<ul>
+<li>modified files</li>
+<li>staged files (changes you want to record)</li>
+<li>committed files (latest record of changes)</li>
+</ul>
+</li>
+</ul>
 
 #--
 #### Version control basics
 
-<div class="splash">
+<div class="splash" style="position:relative">
+
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position:absolute">
 Modify files in the working directory
 
 <img style="width: 50%" src="img/vc/git_states-1.png" alt="Files in the working directory" />
 </div>
 
-#--
-#### Version control basics
-
-<div class="splash">
-Stage files to the index<br/>
-
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position:absolute">
+<!-- Stage files to the index -->
+Choose files to include in snapshot
+<br/>
 <img style="width: 50%" src="img/vc/git_states-5.png" alt="Files staged to the index" />
 </div>
 
-#--
-#### Version control basics
-
-<div class="splash">
-Commit files (<code class="inline">HEAD</code> = most recent commit)
-
+<div class="fragment" data-fragment-index="3" style="position:absolute">
+<!-- Commit files (<code class="inline">HEAD</code> = most recent commit) -->
+Create snapshot of project
+<br/>
 <img style="width: 50%" src="img/vc/git_states-6.png" alt="Committed files" />
 </div>
 
@@ -166,96 +164,99 @@ Commit files (<code class="inline">HEAD</code> = most recent commit)
 <dl>
 <dt>
 Inspect your workspace
-</dt>
-<dd>What changes have you made?</dd>
+</dt> <!-- .element class="fragment fade-in" -->
+<dd>What changes have you made?</dd> <!-- .element class="fragment fade-in" -->
 
-<dt>Stage files</dt>
-<dd>Which changes do you want to record?</dd>
+<dt>Stage files</dt> <!-- .element class="fragment fade-in" -->
+<dd>Which changes do you want to record?</dd> <!-- .element class="fragment fade-in" -->
 
-<dt>Commit files</dt>
-<dd>Document and record changes</dd>
+<dt>Commit files</dt> <!-- .element class="fragment fade-in" -->
+<dd>Document and record changes</dd> <!-- .element class="fragment fade-in" -->
 
-<dt>Push files</dt>
-<dd>Share to remote repository</dd>
+<dt>Push files</dt> <!-- .element class="fragment fade-in" -->
+<dd>Share to remote repository</dd> <!-- .element class="fragment fade-in" -->
 
 <dl>
 
 #--
 #### Best practice
 
-- Commit code that works
-
-- Write informative log messages
-
-- Be aware of public vs. private repositories
-
-- Communicate with collaborators to avoid clashes
-
-- Use it for reproducible research and documents
+- Commit code that works <!-- .element class="fragment fade-in" -->
+- Write informative log messages <!-- .element class="fragment fade-in" -->
+- Be aware of public vs. private repositories <!-- .element class="fragment fade-in" -->
+- Communicate with collaborators to avoid clashes <!-- .element class="fragment fade-in" -->
+- Use it for reproducible research and documents <!-- .element class="fragment fade-in" -->
 
 
 #--
-### Practical
+#### Version control for data?
 
-<!-- #### Preliminaries -->
+- Version control is not suited for datasets!
+  - Including large binary files clogs up your repository
+  - Hosting service restrictions on file sizes
+  - License restrictions on redistributing data
 
-<!-- - Install <code>git</code> -->
-<!-- - Sign up for an account on GitHub -->
-<!-- - (Optional) Make sure that RStudio is ready to use git -->
+- Deposit data with a suitable <a href="#/datasharing">data repository</a> instead
 
-#### Introduction to version control for research
+- Record which data version was used in your analysis scripts
 
-[**http://bit.ly/intro-vcr**](http://bit.ly/intro-vcr)
-
-- Using <code>git</code> on the command line
-- Using <code>git</code> through RStudio
 
 #--
-### Resources
+#### More about version control
 
-#### Documentation
+- <em>Version control with Git</em>, CEMAC training session<br/>
+Thursday 8th December, 09:00&ndash;13:00<br/>
+<span style="font-size:70%">Email <a href="mailto:cemac-support@leeds.ac.uk?subject=CEMAC%20Training">cemac-support@leeds.ac.uk</a> with subject &ldquo;CEMAC Training&rdquo; to sign up</span>
 
-- <code class="inline">git help &lt;command&gt;</code>
+- <em>Introduction to version control for research</em><br/>
+<a href="http://bit.ly/intro-vcr">http://bit.ly/intro-vcr</a>
+
 
 #--
 ### Resources
 #### Cheatsheets and tutorials
+
+<div class="smaller">
 
 - git - the simple guide [rogerdudler.github.io/git-guide](http://rogerdudler.github.io/git-guide/)
 - Happy Git and GitHub for the useR [happygitwithr.com](https://happygitwithr.com/)
 - Using Version Control with RStudio [support.rstudio.com](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 - oh shit, git! [ohshitgit.com](https://ohshitgit.com/)
 
-#--
-### Resources
+</div>
+
 #### Reference
 
-- [Pro git book: **git-scm.com/book**](https://git-scm.com/book/en/v2)
-- [git reference: **git-scm.com/docs**](https://git-scm.com/docs)
+<div class="smaller">
 
-#--
-### Configuration
+- Pro git book: [**git-scm.com/book**](https://git-scm.com/book/en/v2)
+- git reference: [**git-scm.com/docs**](https://git-scm.com/docs)
 
-<!-- TODO simple git config here (but include pointers to usethis for R users?) -->
-Configure `git`:
+</div>
 
-```{r eval=FALSE, tidy=FALSE}
-# set global user.name and user.email
-usethis::use_git_config(user.name = "Jane Dee",
-                        user.email = "janedee@example.org")
-```
+<!-- #-- -->
+<!-- ### Configuration -->
 
-Initialise `git` repository and create initial commit:
-```{r eval=FALSE, tidy=FALSE}
-usethis::use_git(message)
-```
+<!-- <\!-- TODO simple git config here (but include pointers to usethis for R users?) -\-> -->
+<!-- Configure `git`: -->
 
-Set up a GitHub personal access token (PAT) to allow creation/modification of GitHub repositories:
-```{r eval=FALSE, tidy=FALSE}
-usethis::browse_github_token()
-```
+<!-- ```{r eval=FALSE, tidy=FALSE} -->
+<!-- # set global user.name and user.email -->
+<!-- usethis::use_git_config(user.name = "Jane Dee", -->
+<!--                         user.email = "janedee@example.org") -->
+<!-- ``` -->
 
-Create GitHub repository associated with your project:
-```{r eval=FALSE, tidy=FALSE}
-usethis::use_github()
-```
+<!-- Initialise `git` repository and create initial commit: -->
+<!-- ```{r eval=FALSE, tidy=FALSE} -->
+<!-- usethis::use_git(message) -->
+<!-- ``` -->
+
+<!-- Set up a GitHub personal access token (PAT) to allow creation/modification of GitHub repositories: -->
+<!-- ```{r eval=FALSE, tidy=FALSE} -->
+<!-- usethis::browse_github_token() -->
+<!-- ``` -->
+
+<!-- Create GitHub repository associated with your project: -->
+<!-- ```{r eval=FALSE, tidy=FALSE} -->
+<!-- usethis::use_github() -->
+<!-- ``` -->

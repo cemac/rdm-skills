@@ -44,18 +44,6 @@ of data, data lifecycle, IP, ethical issues, sensitive data etc.
 
 
 
-### About you
-
-<div class="splash"><img src="img/fields-prop-dark.png" /></div>
-
-
-<div class="splash"><img src="img/data-word-cloud-dark.png" /></div>
-
-
-<div class="splash"><img src="img/software-prop-dark.png" /></div>
-
-
-
 ### Research data lifecycle
 
 <div class="splash">

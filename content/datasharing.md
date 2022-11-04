@@ -1,0 +1,55 @@
+<!-- .slide: id="datasharing" -->
+## Data sharing
+
+#--
+
+### Why share your data?
+
+<ul>
+  <li class="fragment fade-in">Research papers only tell part of the research story</li>
+  <li class="fragment fade-in">Access to data underpinning results is key to evaluating and verifying results</li>
+  <li class="fragment fade-in">Reproducibility requires access to data so that analyses can be replicated</li>
+  <li class="fragment fade-in">Providing access to data may be a requirement of your funder or journal</li>
+</ul>
+
+#--
+
+### Benefits of sharing data
+
+<ul>
+  <li class="fragment fade-in">Sharing data provides opportunities for re-use of data by yourself or others</li>
+  <li class="fragment fade-in">Archived data can be accessed via persistent identifiers which
+    <ul>
+      <li class="fragment fade-in">Permanently identify your work</li>
+      <li class="fragment fade-in">Provide a way to cite specific datasets unambiguously</li>
+      <li class="fragment fade-in">Provide stable, long-term access to data</li>
+    </ul>
+  </li>
+  <li class="fragment fade-in">Additional information provided when archiving data promotes data discovery</li>
+</ul>
+
+#--
+
+### Data policies
+
+<ul>
+  <li class="fragment fade-in">Example data policy requirements:
+    <ul>
+      <li class="fragment fade-in">
+        use of reliable (public) data repositories
+      </li>
+      <li class="fragment fade-in">
+        assigning digital object identifiers
+      </li>
+      <li class="fragment fade-in">
+        properly citing data sets as individual contributions
+      </li>
+      <li class="fragment fade-in">
+        providing a statement on the availability of underlying data
+      </li>
+    </ul>
+  </li>
+  <li class="fragment fade-in">
+    These requirements align with <a href="#fairdata">FAIR data principles</a>
+  </li>
+</ul>
