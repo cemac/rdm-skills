@@ -64,7 +64,7 @@ Unique and persistent identifiers and metadata allow data to be located quickly 
 </li>
 <li class="fragment fade-in" id="fair_accessible">
 <a href="#accessibility"><strong>Accessible</strong></a>
-Data can be accessed using standard protocol; metadata accessible even if authorisation is required for data access
+Data can be accessed using standard protocols; metadata accessible even if authorisation is required for data access
 </li>
 <li class="fragment fade-in" id="fair_interoperable">
 <a href="#interoperability"><strong>Interoperable</strong></a>
