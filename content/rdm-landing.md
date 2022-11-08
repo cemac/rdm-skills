@@ -37,7 +37,7 @@ of data, data lifecycle, IP, ethical issues, sensitive data etc.
 <br/>
 15:50 &hellip; Break
 <br/>
-16:00 &hellip; Version control and archiving
+16:00 &hellip; Data archiving and re-use
 <br/>
 16:50 &hellip; Finish
 </p>
@@ -64,15 +64,14 @@ of data, data lifecycle, IP, ethical issues, sensitive data etc.
 <p class="left"><br/> 
 Data creation and acquisition<br/>
 Organising and describing your data<br/>
-Maintaining data integrity<br/>
 Storage and backup</p>
 
 
 <img src="img/data_lifecycle_analyse.png" width="30%" style = "float: left; margin-right: 0.6em;"/>
 <p class="left"><br/>
-Developing an analysis pipeline<br/>
 Reproducible workflows<br/>
-Literate programming
+Literate programming<br/>
+Version control
 </p>
 
 
@@ -82,8 +81,11 @@ Literate programming
 <img src="img/data_lifecycle_re-use.png" width="50%" style="border: 1px solid transparent;"/>
 </div>
 <p class="left">
-Version control<br/>
-Data sharing<br/><br/><br/>
-Archiving and DOIs<br/><br/><br/><br/>
-FAIR data principles
+Data sharing<br/>
+FAIR data<br/><br/><br/>
+Research data repositories<br/><br/><br/>
+Data licensing<br/>
+Digital object identifiers<br/>
+Data citations<br/>
+Data availability statements
 </p>
