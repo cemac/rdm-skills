@@ -5,6 +5,8 @@
 <div class="splash">
 Welcome!
 
+[cemac.github.io/rdm-skills](https://cemac.github.io/rdm-skills/)
+
 <img src="img/all_logos-2-scaled.png" />
 
 Tamora James, Centre for Environmental Modelling and Computation, University of Leeds
