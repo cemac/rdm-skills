@@ -30,7 +30,7 @@
 
 #--
 
-### Example: <a href="#">sample data policy</a>
+### Example: <a href="https://leeds365.sharepoint.com/:b:/r/sites/22233SOEE5915MScientificQua_7ae3b7a3-e5c6-11ec-84ea-33d5211a88f2/Shared%20Documents/x12%20Data%20archiving/Sample%20Data%20Policy.pdf?csf=1&web=1&e=484UQ1">sample data policy</a>
 
 <ul>
   <li class="fragment fade-in">Sample data policy requirements:

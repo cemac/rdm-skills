@@ -22,7 +22,7 @@
 
 ### Specialist data repositories
 
-- Domain specific data centres e.g. [EIDC](https://www.ceh.ac.uk/nerc-data-centre "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
+- Domain specific data centres e.g. [EIDC](https://eidc.ac.uk/ "Environmental Information Data Centre"), [BODC](https://www.bodc.ac.uk/ "British Oceanographic Data Centre"), [CEDA Archive](https://archive.ceda.ac.uk/ "Centre for Environmental Data Analysis (CEDA) Archive")
 - Organisation specific repositories e.g. [Research Data Leeds](https://archive.researchdata.leeds.ac.uk/)
 
 #--

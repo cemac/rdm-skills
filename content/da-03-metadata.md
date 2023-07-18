@@ -1,5 +1,5 @@
 <!-- .slide: id="metadata" -->
-## Metadata
+## Metadata and standards
 
 #--
 
@@ -96,7 +96,7 @@
   <li class="fragment fade-in">
     Using a standardised metadata format makes it easier to find and reuse data
   </li>
-  <li class="fragment fade-in">Many different, discipline specific metadata standards (see e.g. <a href="http://rd-alliance.github.io/metadata-directory/standards/">RDA Metadata Directory</a>, <a href="https://fairsharing.org/standards/">FAIRsharing.org</a>)</li>
+  <li class="fragment fade-in">Many different, discipline specific metadata standards (see e.g. <a href="https://rdamsc.bath.ac.uk/">RDA Metadata Standards Catalog</a>, <a href="https://fairsharing.org/standards/">FAIRsharing.org</a>)</li>
   <li class="fragment fade-in">XML schema often used to define structure</li>
   <li class="fragment fade-in">Software tools for creating and reading metadata</li>
 </ul>
