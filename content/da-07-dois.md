@@ -155,6 +155,6 @@
     In many cases these were studies in which data were stated to be "available upon request"
 </ul>
 
-<p class="footnote">1. Stodden, V., Seiler, J., Ma, Z., 2018. An empirical analysis of journal policy effectiveness for computational reproducibility. Proceedings of the National Academy of Sciences 115, 2584–2589. https://doi.org/10.1073/pnas.1708290115</p>
-
-<p class="footnote">2. Gabelica, M., Bojčić, R., Puljak, L., 2022. Many researchers were not compliant with their published data sharing statement: a mixed-methods study. Journal of Clinical Epidemiology 150, 33–41. https://doi.org/10.1016/j.jclinepi.2022.05.019</p>
+<p class="footnote">1. Stodden, V., Seiler, J., Ma, Z., 2018. An empirical analysis of journal policy effectiveness for computational reproducibility. Proceedings of the National Academy of Sciences 115, 2584--2589. https://doi.org/10.1073/pnas.1708290115
+<br/>
+2. Gabelica, M., Boj&ccirc;i&cacute;, R., Puljak, L., 2022. Many researchers were not compliant with their published data sharing statement: a mixed-methods study. Journal of Clinical Epidemiology 150, 33--41. https://doi.org/10.1016/j.jclinepi.2022.05.019</p>
