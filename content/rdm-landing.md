@@ -8,9 +8,9 @@ Welcome!
 [cemac.github.io/rdm-skills](https://cemac.github.io/rdm-skills/)
 
 <img src="img/all_logos-2-scaled.png" />
+Adapted by Mark RIchardson, <m.g.richardson@leeds.ac.uk> based on original work by 
+Tamora James, while she was working for the Centre for Environmental Modelling and Computation (CEMAC), University of Leeds
 
-Tamora James, Centre for Environmental Modelling and Computation (CEMAC), University of Leeds
-<t.d.james1@leeds.ac.uk>
 </div>
 
 
