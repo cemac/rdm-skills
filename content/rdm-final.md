@@ -1,9 +1,6 @@
 <!-- .slide: id="summary" -->
 ## Summary
-
-
 <div class="splash" id="splash-final">
-
 <p>
 Data creation and acquisition<br/>
 Organising and describing your data<br/>
@@ -20,10 +17,7 @@ Digital object identifiers<br/>
 Data citations<br/>
 Data availability statements
 </p>
-
 </div>
-
-#--
 
 * These courses usually delivered in November/December
 * <span>**Introduction to the UNIX Shell**<br/>
