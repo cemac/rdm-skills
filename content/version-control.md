@@ -204,8 +204,9 @@ Inspect your workspace
 #--
 #### More about version control
 
+- Often delivered in December
+
 - <em>Version control with Git</em>, CEMAC training session<br/>
-Thursday 8th December, 09:00&ndash;13:00<br/>
 <span style="font-size:70%">Email <a href="mailto:cemac-support@leeds.ac.uk?subject=CEMAC%20Training">cemac-support@leeds.ac.uk</a> with subject &ldquo;CEMAC Training&rdquo; to sign up</span>
 
 - <em>Introduction to version control for research</em><br/>
@@ -214,14 +215,14 @@ Thursday 8th December, 09:00&ndash;13:00<br/>
 
 #--
 ### Resources
-#### Cheatsheets and tutorials
+#### Summary Guides and Tutorials
 
 <div class="smaller">
 
 - git - the simple guide [rogerdudler.github.io/git-guide](http://rogerdudler.github.io/git-guide/)
 - Happy Git and GitHub for the useR [happygitwithr.com](https://happygitwithr.com/)
 - Using Version Control with RStudio [support.rstudio.com](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
-- oh shit, git! [ohshitgit.com](https://ohshitgit.com/)
+- oh dangit, git! [dangitgit.com](https://dangitgit.com/)
 
 </div>
 
@@ -233,6 +234,9 @@ Thursday 8th December, 09:00&ndash;13:00<br/>
 - git reference: [**git-scm.com/docs**](https://git-scm.com/docs)
 
 </div>
+
+### PAUSE here
+
 
 <!-- #-- -->
 <!-- ### Configuration -->

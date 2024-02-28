@@ -97,7 +97,8 @@
     .
 ```
 
-<span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
+<!-- MR remove footnote atribute (too small for audience) -->
+- &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL)
 
 
 #--
@@ -126,6 +127,9 @@
 |...       |...  |...   |
 ```
 
+<!-- MR compare without footnote attribute -->
+&copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
+
 <span class="footnote"> &copy; Crown 2021 copyright Defra via [uk-air.defra.gov.uk](https://uk-air.defra.gov.uk), licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL) </span>
 
 
@@ -137,19 +141,20 @@
   <li>
     What is the interface for accessing data?
     <ul>
-      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/202210/20221031/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
+      <li><a href="https://www.ncei.noaa.gov/data/global-forecast-system/access/grid-004-0.5-degree/forecast/">Remote access</a> e.g. FTP or HTTP <!-- Example NOAA recent data -->
         <ul>
-          <li>Access via FTP client or web browser</li>
-          <li>Automate using command line scripting</li>
+          <li>Access via FTP client or web browser</li> <!-- .element class="smaller" -->
+          <li>Automate using command line scripting</li> <!-- .element class="smaller" -->
         </ul>
       </li>
       <li><a href="https://www.ncei.noaa.gov/has/HAS.FileAppRouter?datasetname=GFSGRB24&subqueryby=STATION&applname=&outdest=FILE">Order form on website</a></li>
       <li><a href="https://www.metoffice.gov.uk/services/data/datapoint/about">Web API based access</a> <!-- Example: Met Office DataPoint -->
         <ul>
-          <li>Register for API key</li>
-          <li>Submit URL based query to access data</li>
-          <li>Data served in XML/JSON format</li>
-          <li>Fair use policy</li>
+          <li>Register for API key</li> <!-- .element class="smaller" -->
+	  <li>Read the docs <a href="https://www.metoffice.gov.uk/services/data/datapoint/getting-started">www.metoffice.go.uk/services/data/datapoint/getting-started</a> </li>
+          <li>Submit URL based query to access data</li> <!-- .element class="smaller" -->
+          <li>Data served in XML/JSON format</li> <!-- .element class="smaller" -->
+          <li>Fair use policy</li> <!-- .element class="smaller" -->
         </ul>
       </li>
     </ul>
@@ -647,3 +652,6 @@ Can you access stored data to carry out your analysis?
 - Frequency of backup
 - Ensuring sufficient capacity
 - Transfer speed
+
+#--
+### PAUSE here
