@@ -81,11 +81,11 @@
     Check your journal's manuscript submission guidelines for a recommended format
   </li>
   <li class="fragment fade-in">
-    A typical data citation format:<br/>
-    <strong class="fragment fade-in" style="font-size:large">creators: title, publisher/repository, identifier, publication year.</strong>
-    <div class="fragment fade-in" style="font-size: large">
+    A typical data citation format:
+
+    creators: title, publisher/repository, identifier, publication year. 
+
       Loew, A., Bennartz, R., Fell, F., Lattanzio, A., Doutriaux-Boucher, M., and Schulz, J.: Surface Albedo Validation Sites, EUMETSAT, http://dx.doi.org/10.15770/EUM_SEC_CLM_1001, 2015.
-    </div>
   </li>
 </ul>
 
@@ -117,11 +117,11 @@
 <ul>
   <li class="fragment fade-in">
     Be specific: refer to the sections of your manuscript that rely on the data you are citing
-    <p style="font-size:large">"The image data supporting Fig. 2 and Fig. 4 are publicly available in the figshare repository as part of the following record: doi:10.1234/xyz [18]."</p>
+    <p>"The image data supporting Fig. 2 and Fig. 4 are publicly available in the figshare repository as part of the following record: doi:10.1234/xyz [18]."</p>
   </li>
   <li class="fragment fade-in">
     Cite your dataset as an individual contribution
-    <p style="font-size:large">"The data associated with this paper (microscopy images, geometrical dimensions, model input files and results) are openly available from the University of Leeds Data Repository (Mengoni and Wilcox, 2015)."</p>
+    <p>"The data associated with this paper (microscopy images, geometrical dimensions, model input files and results) are openly available from the University of Leeds Data Repository (Mengoni and Wilcox, 2015)."</p>
   </li>
 </ul>
 
