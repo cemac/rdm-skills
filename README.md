@@ -1,5 +1,5 @@
-# rdm-skills
+# Introduction to Data Archiving
 
-Research Data Management skills training for postgraduate researchers.
+This content is to be used for MRes Climate and Atmospheric Science at University of Leeds.
 
 Slides created using [reveal.js](https://revealjs.com).
