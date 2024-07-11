@@ -3,8 +3,8 @@
 
 <div class="splash">
 
-Tamora James, Centre for Environmental Modelling and Computation, University of Leeds
-<t.d.james1@leeds.ac.uk>
+Anne Barber, Centre for Environmental Modelling and Computation, University of Leeds
+<a.barber1@leeds.ac.uk>
 
 <img src="img/UoLeeds_Logo_white_png_transparent_background.png" />
 
@@ -28,7 +28,7 @@ Tamora James, Centre for Environmental Modelling and Computation, University of 
   * Data statements<br/>
 * Data archiving strategy
 
-
+<!-- Why isn't this showing? -->
 ### Course materials
 
 <p style="font-size:smaller"><a href="https://leeds365.sharepoint.com/:f:/r/sites/22233SOEE5915MScientificQua_7ae3b7a3-e5c6-11ec-84ea-33d5211a88f2/Shared%20Documents/x12%20Data%20archiving?csf=1&web=1&e=5bYnNa">SOEE5915M Scientific Quality and Discourse &ndash; 12 Data archiving</a></p>
