@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Panorama DTP - Research Data Management Skills</title>
+		<title>MRes Climate and Atmospheric Science - Introduction to Data Archiving</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -14,16 +14,33 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
                 <style type="text/css">
-                  .splash { text-align: center; }
+                  .splash { text-align: center; position: relative; }
                   .reveal.center .slides section { text-align: left; }
                   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 { text-align: center; }
                   .reveal h5 { font-size: 70%; }
                   .reveal dt { color: #1b91ff; }
                   .footnote { font-size: small; }
+                  sup.footnote { font-size: 50%; }
                   .pull-left, .pull-right { float: left; width: 50%; }
-                  .smaller { font-size: smaller; }
                   .codex { font-size: smaller; }
                   .codex code { color: #1b91ff; }
+
+                  .callout li { list-style: none;
+                                display: block;
+                                position: absolute;
+                                width: 30%;
+                                font-size: 0.7em; }
+                  .callout strong { color: #1b91ff; display: block; }
+                  .callout-tl { left: -15%; top: 0; }
+                  .callout-bl { left: -15%; bottom: 20%;}
+                  .callout-tr { right: -15%; top: 0; }
+                  .callout-br { right: -15%; bottom: 20%;}
+
+                  .indent { margin-left: 2em; }
+
+                  .footnote-ref ~ .footnote-ref :before {
+                      content: ', '
+                  }
 
                   #splash-final { position: relative; }
                   #splash-final:before { content: ' ';
@@ -45,7 +62,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                                <section data-markdown="content/rdm-landing.md"
+                                <section data-markdown="content/da-landing.md"
                                          data-separator="^\n\n\n"
                                          data-separator-vertical="^\n\n"
                                          data-separator-notes="^Note:"
@@ -53,47 +70,7 @@
 
                                 </section>
 
-                                <section data-markdown="content/rdm-01-create.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
-                                <section data-markdown="content/rdm-01-data-structure.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
-                                <section data-markdown="content/rdm-02-analyse.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
-                                <section data-markdown="content/version-control.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
-                                <section data-markdown="content/rdm-03-share.md"
-                                         data-separator="^#=="
-                                         data-separator-vertical="^#--"
-                                         data-separator-notes="^Note:"
-                                         data-charset="iso-8859-15">
-
-                                </section>
-
-                                <section data-markdown="content/datasharing.md"
+                                <section data-markdown="content/da-01-motivation.md"
                                          data-separator="^#=="
                                          data-separator-vertical="^#--"
                                          data-separator-notes="^Note:"
@@ -109,7 +86,7 @@
 
                                 </section>
 
-                                <section data-markdown="content/rdm-04-archive.md"
+                                <section data-markdown="content/da-03-metadata.md"
                                          data-separator="^#=="
                                          data-separator-vertical="^#--"
                                          data-separator-notes="^Note:"
@@ -125,7 +102,7 @@
 
                                 </section>
 
-                                <section data-markdown="content/rdm-05-reuse.md"
+                                <section data-markdown="content/da-04-practical.md"
                                          data-separator="^#=="
                                          data-separator-vertical="^#--"
                                          data-separator-notes="^Note:"
@@ -149,11 +126,21 @@
 
                                 </section>
 
-                                <section data-markdown="content/rdm-final.md"
-                                         data-separator="^\n\n\n"
-                                         data-separator-vertical="^\n\n"
+                                <section data-markdown="content/da-08-practical.md"
+                                         data-separator="^#=="
+                                         data-separator-vertical="^#--"
                                          data-separator-notes="^Note:"
                                          data-charset="iso-8859-15">
+
+                                </section>
+
+
+                                <section data-markdown="content/da-summary.md"
+                                         data-separator="^#=="
+                                         data-separator-vertical="^#--"
+                                         data-separator-notes="^Note:"
+                                         data-charset="iso-8859-15">
+                                </section>
 
 			</div>
 		</div>
@@ -171,11 +158,7 @@
 
 			    // Learn about plugins: https://revealjs.com/plugins/
 			    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-                            // MR adding slide numbers
-                            slideNumber: 'c/t',
-                            // MR adding size information
-                            width: 1920,
-                            height: 1080,
+
                             // Switch off default slide transitions
                             //transition: "none",
 			});
