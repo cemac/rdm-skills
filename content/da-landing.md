@@ -10,7 +10,6 @@ Anne Barber, Centre for Environmental Modelling and Computation, University of L
 
 </div>
 
-
 <!-- .slide: style="font-size:smaller" -->
 ### Topics
 
