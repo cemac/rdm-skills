@@ -1,10 +1,7 @@
-#### MRes Climate and Atmospheric Science
-## Introduction to Data Archiving
-
 <!-- .slide: style="font-size:smaller" -->
 ### Topics
 
-* Motivations for archiving research data
+* Motivations for archiving research data<br/>
 * FAIR data principles<br/>
 * Findability<br/>
   * Using metadata to describe research data<br/>

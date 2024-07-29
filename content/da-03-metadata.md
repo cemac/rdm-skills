@@ -52,23 +52,23 @@
   </li>
 </ul>
 
-<!-- #-- -->
+#--
 
-<!-- ### Using metadata to describe research data -->
+### Using metadata to describe research data
 
-<!-- <ul> -->
-<!--   <li class="fragment fade-in">Data comes in many different shapes and sizes -->
-<!--     <ul> -->
-<!--       <li>Flat vs structured/hierarchical</li> -->
-<!--       <li>Proprietary vs open formats</li> -->
-<!--     </ul> -->
-<!--   </li> -->
-<!--   <li class="fragment fade-in">Consider accessibility/portability -->
-<!--     <ul> -->
-<!--       <li>Will you need to use particular software to access your data?</li> -->
-<!--     </ul> -->
-<!--   </li> -->
-<!-- </ul> -->
+<ul>
+  <li class="fragment fade-in">Data comes in many different shapes and sizes
+    <ul>
+      <li>Flat vs structured/hierarchical</li>
+      <li>Proprietary vs open formats</li>
+    </ul>
+  </li>
+  <li class="fragment fade-in">Consider accessibility/portability
+    <ul>
+      <li>Will you need to use particular software to access your data?</li>
+    </ul>
+  </li>
+</ul>
 
 #--
 
