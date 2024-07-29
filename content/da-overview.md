@@ -15,7 +15,7 @@
   * Data statements<br/>
 * Data archiving strategy
 
-\n\n
+^\n\n
 
 ### Course materials
 
