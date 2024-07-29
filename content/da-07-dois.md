@@ -73,6 +73,8 @@
 
 ### Data citation format
 
+<!-- Note that the following is disappearing off the screen - need to fix -->
+
 <ul>
   <li class="fragment fade-in">
     A data citation may include information about creator, publication date, title, version, publisher, resource type, identifier
@@ -113,7 +115,7 @@
 #--
 
 ### Writing a data availability statement
-
+<!-- this is disappearing off the bottom of the page - fix! -->
 <ul>
   <li class="fragment fade-in">
     Be specific: refer to the sections of your manuscript that rely on the data you are citing
