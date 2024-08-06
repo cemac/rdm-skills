@@ -2,10 +2,10 @@
 ### Topics
 
 * Motivations for archiving research data<br/>
+* Key concepts for creating reusable and long-lived research data<br/>
 * FAIR data principles<br/>
-  * Findability<br/>
-  * Accessibility<br/>
-  * Interoperability<br/>
-  * Reusability<br/>
-* The value of metadata
-* Data archiving strategy
+  * Findability (the value of metadata)<br/>
+  * Accessibility (via data repositories)<br/>
+  * Interoperability (standards compliance)<br/>
+  * Reusability (licensing, DOIs, data citations and availability statements)<br/>
+* A good strategy for data archiving
