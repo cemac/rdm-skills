@@ -1,5 +1,5 @@
 <!-- .slide: style="font-size:smaller" -->
-### Topics
+### .。・゜・。..。 Topics .。・゜・。..。
 
 * Motivations for archiving research data<br/>
 * Key concepts for creating reusable and long-lived research data<br/>
@@ -9,3 +9,4 @@
   * Interoperability (standards compliance)<br/>
   * Reusability (licensing, DOIs, data citations and availability statements)<br/>
 * A good strategy for data archiving
+
