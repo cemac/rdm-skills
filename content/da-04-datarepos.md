@@ -57,10 +57,6 @@
     </ul>
   </li>
   <li class="fragment fade-in">Check the reputation of the repository
-    
-  </li>
-  <li class="fragment fade-in">Check storage space and length of hosting service
-    
   </li>
 </ul>
 
