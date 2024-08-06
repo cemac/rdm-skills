@@ -1,5 +1,7 @@
 <!-- .slide: id="metadata" -->
-## Metadata and standards
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+## * ~ *  Metadata and standards ~ * ~
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 
 #--
 

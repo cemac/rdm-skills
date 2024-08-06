@@ -1,6 +1,10 @@
 <!-- .slide: id="datarepos" -->
 ## Research data repositories
 
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+## * ~ *  Research Data Repositories ~ * ~
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+
 #--
 
 ### Types of data repository
@@ -53,14 +57,10 @@
     </ul>
   </li>
   <li class="fragment fade-in">Check the reputation of the repository
-    <ul>
-      <li class="fragment fade-in">
-        Reputation within community
-      </li>
-      <li class="fragment fade-in">
-        Accreditation
-      </li>
-    </ul>
+    
+  </li>
+  <li class="fragment fade-in">Check storage space and length of hosting service
+    
   </li>
 </ul>
 
