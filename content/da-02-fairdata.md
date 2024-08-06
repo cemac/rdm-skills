@@ -1,9 +1,11 @@
 <!-- .slide: id="fairdata" -->
-## FAIR data
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ 
+## * ~ * ~ FAIR data * ~ * ~
+## ~ * ~ * ~ * ~ * ~ * ~ * ~ 
 
 #--
 
-### What's FAIR data?
+### ~ * ~ * What's FAIR data? * ~ * ~
 
 <p class="splash fragment fade-in">
   <emph>The FAIR Guiding Principles for scientific data management and stewardship</emph>, Wilkinson et el. 2016
@@ -37,7 +39,7 @@ Also helpful for humans!
 
 #--
 
-### FAIR data principles
+### ~ * ~ * FAIR data principles * ~ * ~
 
 <ul>
 <li class="fragment fade-in" id="fair_findable">
