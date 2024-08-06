@@ -16,7 +16,7 @@
 
 #--
 
-### ~ * ~ * Benefits of archiving data * ~ * ~ 
+### * ~ * Benefits of archiving data * ~ *
 
 <ul>
   <li class="fragment fade-in">Archiving data provides opportunities for re-use of data by yourself or others</li>
