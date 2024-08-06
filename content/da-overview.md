@@ -1,5 +1,5 @@
 <!-- .slide: style="font-size:smaller" -->
-### .。・゜・。..。 Topics .。・゜・。..。
+### ~ * ~ * ~ Topics ~ * ~ * ~
 
 * Motivations for archiving research data<br/>
 * Key concepts for creating reusable and long-lived research data<br/>
