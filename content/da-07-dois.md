@@ -76,21 +76,20 @@
 
 ### Data citation format
 
-<!-- Note that the following is disappearing off the screen - need to fix -->
-
 <ul>
   <li class="fragment fade-in">
-    A data citation may include information about creator, <br/> publication date, title, version, publisher, resource type, identifier
+    A data citation may include information about creator, publication date, title, version, publisher, resource type, identifier
   </li>
   <li class="fragment fade-in">
-    Check your journal's manuscript submission guidelines for a <br/> recommended format
+    Check your journal's manuscript submission guidelines for a recommended format
   </li>
   <li class="fragment fade-in">
     A typical data citation format:
 
     creators: title, publisher/repository, identifier, publication year. 
+    
+    Loew, A., Bennartz, R., Fell, F., Lattanzio, A., Doutriaux-Boucher, M., and Schulz, J.: Surface Albedo Validation Sites, EUMETSAT, http://dx.doi.org/10.15770/EUM_SEC_CLM_1001, 2015.
 
-      Loew, A., Bennartz, R., Fell, F., Lattanzio, A., Doutriaux-Boucher, M., and Schulz, J.: Surface Albedo Validation Sites, EUMETSAT, http://dx.doi.org/10.15770/EUM_SEC_CLM_1001, 2015.
   </li>
 </ul>
 
