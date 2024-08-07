@@ -1,8 +1,7 @@
 <!-- .slide: id="datarepos" -->
-## Research data repositories
 
 ## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
-## * ~ *  Research Data Repositories ~ * ~
+##       Research Data Repositories
 ## ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 
 #--
