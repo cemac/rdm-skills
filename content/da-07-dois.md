@@ -80,10 +80,10 @@
 
 <ul>
   <li class="fragment fade-in">
-    A data citation may include information about creator, publication date, title, version, publisher, resource type, identifier
+    A data citation may include information about creator, <br/> publication date, title, version, publisher, resource type, identifier
   </li>
   <li class="fragment fade-in">
-    Check your journal's manuscript submission guidelines for a recommended format
+    Check your journal's manuscript submission guidelines for a <br/> recommended format
   </li>
   <li class="fragment fade-in">
     A typical data citation format:
