@@ -1,6 +1,10 @@
 <!-- .slide: id="dastrategy" -->
 ## Data archiving strategy
 
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+##      Data archiving strategy 
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+
 #--
 
 ### What data to archive?
