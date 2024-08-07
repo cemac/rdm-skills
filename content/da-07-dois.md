@@ -96,7 +96,10 @@
 #==
 
 <!-- .slide: id="datastatements" -->
-## Data availability statements
+
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+##   Data availability statements
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 
 #--
 
