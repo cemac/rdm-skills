@@ -34,6 +34,9 @@
 
 <!-- .slide: id="summary" -->
 ## Summary
+## * ~ * ~ * ~ * ~ *
+##      Summary 
+## * ~ * ~ * ~ * ~ *
 
 #--
 
