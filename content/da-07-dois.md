@@ -1,7 +1,7 @@
 <!-- .slide: id="dois" -->
-## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~
 ## Digital Object Identifiers
-## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~
 
 #--
 
@@ -52,9 +52,9 @@
 #==
 
 <!-- .slide: id="datacitations" -->
-## * ~ * ~ * ~ * ~ 
-## Data Citations
-## * ~ * ~ * ~ * ~
+## * ~ * ~ * ~ * ~ * ~
+##   Data Citations
+## * ~ * ~ * ~ * ~ * ~
 
 #--
 
@@ -97,9 +97,9 @@
 
 <!-- .slide: id="datastatements" -->
 
-## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
-##   Data availability statements
-## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+##     Data availability statements
+## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 
 #--
 
@@ -120,7 +120,6 @@
 #--
 
 ### Writing a data availability statement
-<!-- this is disappearing off the bottom of the page - fix! -->
 <ul>
   <li class="fragment fade-in">
     Be specific: refer to the sections of your manuscript that rely on the data you are citing

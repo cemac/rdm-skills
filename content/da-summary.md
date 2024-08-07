@@ -1,6 +1,4 @@
 <!-- .slide: id="dastrategy" -->
-## Data archiving strategy
-
 ## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 ##      Data archiving strategy 
 ## * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
@@ -33,7 +31,6 @@
 #==
 
 <!-- .slide: id="summary" -->
-## Summary
 ## * ~ * ~ * ~ * ~ *
 ##      Summary 
 ## * ~ * ~ * ~ * ~ *
