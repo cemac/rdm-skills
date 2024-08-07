@@ -126,6 +126,12 @@
     Be specific: refer to the sections of your manuscript that rely on the data you are citing
     <p>"The image data supporting Fig. 2 and Fig. 4 are publicly available in the figshare repository as part of the following record: doi:10.1234/xyz [18]."</p>
   </li>
+</ul>
+
+#--
+
+### Writing a data availability statement
+<ul>
   <li class="fragment fade-in">
     Cite your dataset as an individual contribution
     <p>"The data associated with this paper (microscopy images, geometrical dimensions, model input files and results) are openly available from the University of Leeds Data Repository (Mengoni and Wilcox, 2015)."</p>
