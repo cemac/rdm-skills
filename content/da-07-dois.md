@@ -18,7 +18,6 @@
 </ul>
 
 
-
 #--
 
 ### Benefits of creating a DOI for your data
@@ -53,7 +52,9 @@
 #==
 
 <!-- .slide: id="datacitations" -->
-## Data citations
+## * ~ * ~ * ~ * ~ 
+## Data Citations
+## * ~ * ~ * ~ * ~
 
 #--
 
